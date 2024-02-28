@@ -1,7 +1,5 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
-
  Em um mundo cada vez mais digital, onde a informação se propaga em grande velocidade e a atenção se torna um bem precioso, o amor pelos livros permanece. Bibliotech é uma ferramenta inovadora que visa auxiliar leitores na organização e acompanhamento de suas obras favoritas, transformando essa experiência em uma jornada personalizada.
  
  Gerenciar um acervo literário pessoal, até então uma tarefa trabalhosa, marcada por anotações rabiscadas em cadernos, encontra em Bibliotech a solução ideal. Através de uma interface intuitiva e amigável, a plataforma permite a criação e personalização de coleções, facilitando a organização dos livros de acordo com as preferências e critérios de cada usuário.
