@@ -10,12 +10,16 @@ A organização e o acompanhamento de um acervo literário pessoal podem se torn
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+#### Objetivo geral:
+
+- Desenvolver uma aplicação web e mobile com back-end 
+
+#### Objetivos específicos:
+
+- Permitir a criação de coleções ilimitadas com base em critérios específicos do usuário.
+
+- Permitir a catalogação completa de cada livro, incluindo ISBN, título, autor, editora, data de publicação, gênero, sinopse.
 
 ## Justificativa
 
