@@ -2,9 +2,9 @@
 
  Em um mundo cada vez mais digital, onde a informação se propaga em grande velocidade e a atenção se torna um bem precioso, o amor pelos livros permanece. Bibliotech é uma ferramenta inovadora que visa auxiliar leitores na organização e acompanhamento de suas obras favoritas, transformando essa experiência em uma jornada personalizada.
  
- Gerenciar um acervo literário pessoal, até então uma tarefa trabalhosa, marcada por anotações rabiscadas em cadernos, encontra em Bibliotech a solução ideal. Através de uma interface intuitiva e amigável, a plataforma permite a criação e personalização de coleções, facilitando a organização dos livros de acordo com as preferências e critérios de cada usuário.
+ Gerenciar um acervo literário pessoal, até então uma tarefa trabalhosa encontra na Bibliotech a solução ideal. Através de uma interface intuitiva e amigável, a plataforma permite a criação e personalização de coleções, facilitando a organização dos livros de acordo com as preferências e critérios de cada usuário.
  
- Com Bibliotech, os usuários têm a capacidade de criar uma conta com credenciais exclusivas para iniciar a construção de seu próprio acervo pessoal. Dentro desse acervo, é possível criar coleções personalizadas, adicionando ou removendo livros conforme desejado.
+ Na Bibliotech, os usuários têm a capacidade de criar uma conta com credenciais exclusivas para iniciar a construção de seu próprio acervo pessoal. Dentro desse acervo, é possível criar coleções personalizadas, adicionando ou removendo livros conforme desejado.
  
  Cada livro em uma coleção pode ser catalogado detalhadamente, incluindo informações como ISBN, título, autor, editora, data de publicação, gênero, sinopse e avaliações. Para simplificar esse processo, a aplicação permite que os usuários preencham um formulário com o ISBN do livro. Ao acessar uma coleção, os usuários podem visualizar a lista de livros e, ao clicar em um livro específico, ter acesso a todos os seus detalhes. 
 
