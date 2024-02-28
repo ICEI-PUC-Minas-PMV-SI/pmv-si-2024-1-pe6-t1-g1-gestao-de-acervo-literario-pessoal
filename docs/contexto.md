@@ -13,7 +13,7 @@ A organização e o acompanhamento de um acervo literário pessoal podem se torn
 
 #### Objetivo geral:
 
-- Desenvolver uma aplicação web e mobile com back-end 
+- Desenvolver uma aplicação web, mobile e back-end 
 
 #### Objetivos específicos:
 
