@@ -1,24 +1,12 @@
 # Introdução
 
- Em um mundo cada vez mais digital, onde a informação se propaga em grande velocidade e a atenção se torna um bem precioso, o amor pelos livros permanece. Bibliotech é uma ferramenta inovadora que visa auxiliar leitores na organização e acompanhamento de suas obras favoritas, transformando essa experiência em uma jornada personalizada.
+ Bibliotech é uma ferramenta inovadora que visa auxiliar leitores na organização e acompanhamento de suas obras favoritas, transformando essa experiência em uma jornada personalizada. Gerenciar um acervo literário pessoal até então uma tarefa trabalhosa, encontra na Bibliotech a solução ideal. Através de uma interface intuitiva e amigável, a plataforma permite a criação e personalização de coleções, facilitando a organização dos livros de acordo com as preferências e critérios de cada usuário.
  
- Gerenciar um acervo literário pessoal até então uma tarefa trabalhosa, encontra na Bibliotech a solução ideal. Através de uma interface intuitiva e amigável, a plataforma permite a criação e personalização de coleções, facilitando a organização dos livros de acordo com as preferências e critérios de cada usuário.
- 
- Na Bibliotech, os usuários têm a capacidade de criar uma conta com credenciais exclusivas para iniciar a construção de seu próprio acervo pessoal. Dentro desse acervo, é possível criar coleções personalizadas, adicionando ou removendo livros conforme desejado.
- 
- Cada livro em uma coleção pode ser catalogado detalhadamente, incluindo informações como ISBN, título, autor, editora, data de publicação, gênero, sinopse e avaliações. Para simplificar esse processo, a aplicação permite que os usuários preencham um formulário com o ISBN do livro. Ao acessar uma coleção, os usuários podem visualizar a lista de livros e, ao clicar em um livro específico, ter acesso a todos os seus detalhes. 
+ Na Bibliotech, os usuários têm a capacidade de criar uma conta com credenciais exclusivas para iniciar a construção de seu próprio acervo pessoal. Dentro desse acervo, é possível criar coleções personalizadas, adicionando ou removendo livros conforme desejado. Cada livro em uma coleção pode ser catalogado detalhadamente, incluindo informações como ISBN, título, autor, editora, data de publicação, gênero, sinopse e avaliações. Para simplificar esse processo, a aplicação permite que os usuários preencham um formulário com o ISBN do livro. Ao acessar uma coleção, os usuários podem visualizar a lista de livros e, ao clicar em um livro específico, ter acesso a todos os seus detalhes. 
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+A organização e o acompanhamento de um acervo literário pessoal podem se tornar um desafio significativo na era digital. As soluções tradicionais, como anotações em cadernos ou planilhas, demonstram-se insuficientes para gerenciar coleções extensas ou diversificadas, tornando a experiência frustrante para os amantes da leitura.
 
 ## Objetivos
 
