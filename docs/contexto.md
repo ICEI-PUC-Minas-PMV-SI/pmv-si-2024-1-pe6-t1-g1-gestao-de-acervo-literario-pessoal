@@ -163,7 +163,21 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Gerenciamento de Projeto
 
-De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
+1. Integração:
+2. Escopo:
+3. Cronograma:
+   - sprint 1: 01 de fevereiro a 10 de março - Gerenciar e documentar serviços de TI
+   - sprint 2: 11 de março a 14 de abril - Planejar, desenvolver e gerenciar uma arquitetura de aplicação distribuída
+   - sprint 3: 15 de abril a 12 de maio - Planejar, desenvolver e gerenciar APIs e Web Services
+   - sprint 4: 13 de maio  a 16 de junho - Planejar, desenvolver e gerenciar uma aplicação web 
+   - sprint 5: 17 de junho a 30 de junho - Planejar, desenvolver e gerenciar uma aplicação móvel
+4. Custos: 
+5. Qualidade:
+6. Recursos:
+7. Comunicações: alinhamento diário e reuniões semanais com os integrantes do grupo e professor.
+8. Riscos:
+0. Aquisições:
+10. Partes Interessadas:
 
 ## Gerenciamento de Tempo
 
