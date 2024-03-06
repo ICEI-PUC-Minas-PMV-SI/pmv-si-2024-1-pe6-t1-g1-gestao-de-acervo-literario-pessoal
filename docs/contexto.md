@@ -79,12 +79,13 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | REGISTRAR LIVRO QUE ESTOU LENDO    | TER CONTROLE DE LEITURA               |
-|Usuário do sistema  | CATALOGAR OS LIVROS QUE LI    | VISUALIZAR LIVROS LIDOS              |
-|Usuário do sistema  | CONFIGURAR METAS DE LEITURA    | VISUALIZAR VELOCIDADE/TEMPO LEITURA              |
-|Usuário do sistema  | VISUALIZAR O TEMPO GASTO NA LEITURA    | VISUALIZAR LIVROS LIDOS              |
-|Usuário do sistema  | REGISTRAR LIVROS QUE DEIXEI DE LER    | VISUALIZAR ABANDONONO DE LEITURA              |
-|Usuário do sistema  | PODER CRIAR MAIS DE UM ACERVO PARA TEMAS DIFERENTES DE LEITURA    | ORGANIZAR MINHAS LEITURAS             |
+|USUARIO DO SISTEMA  | REALIZAR O CADASTRO NO APP    | ESTAR LOGADO E TER ACESSO AO APP               |
+|USUARIO DO SISTEMA  | REGISTRAR LIVRO QUE ESTOU LENDO    | TER CONTROLE DE LEITURA               |
+|USUARIO DO SISTEMA  | CATALOGAR OS LIVROS QUE LI    | VISUALIZAR LIVROS LIDOS              |
+|USUARIO DO SISTEMA  | CONFIGURAR METAS DE LEITURA    | VISUALIZAR VELOCIDADE/TEMPO LEITURA              |
+|USUARIO DO SISTEMA  | VISUALIZAR O TEMPO GASTO NA LEITURA    | VISUALIZAR LIVROS LIDOS              |
+|USUARIO DO SISTEMA  | REGISTRAR LIVROS QUE DEIXEI DE LER    | VISUALIZAR ABANDONONO DE LEITURA              |
+|USUARIO DO SISTEMA  | PODER CRIAR MAIS DE UM ACERVO PARA TEMAS DIFERENTES DE LEITURA    | ORGANIZAR MINHAS LEITURAS             |
           
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
