@@ -150,7 +150,15 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Catálogo de Serviços
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+1. Cadastro de Usuário: Este serviço permite que novos usuários se cadastrem na aplicação, fornecendo informações como nome, apelido, idade, sexo, endereço, e-mail e senha.
+
+2. Registro de Livro em Leitura: Os usuários podem utilizar este serviço para registrar os livros que estão atualmente lendo, fornecendo informações como título do livro, autor, progresso de leitura, etc.
+
+3. Catalogação de Livros Lidos: Este serviço permite que os usuários cataloguem os livros que já leram, adicionando-os ao seu acervo pessoal e fornecendo detalhes sobre a leitura.
+
+4. Configuração de Metas de Leitura: Os usuários podem definir metas de leitura usando este serviço, especificando o número de livros que desejam ler em um determinado período de tempo.
+
+5. Visualização do Tempo Gasto na Leitura: Este serviço fornece aos usuários insights sobre o tempo dedicado à leitura de cada livro, permitindo que acompanhem seus hábitos de leitura ao longo do tempo.
 
 
 # Gerenciamento de Projeto
