@@ -84,8 +84,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |Usuário do sistema  | CONFIGURAR METAS DE LEITURA    | VISUALIZAR VELOCIDADE/TEMPO LEITURA              |
 |Usuário do sistema  | VISUALIZAR O TEMPO GASTO NA LEITURA    | VISUALIZAR LIVROS LIDOS              |
 |Usuário do sistema  | REGISTRAR LIVROS QUE DEIXEI DE LER    | VISUALIZAR ABANDONONO DE LEITURA              |
-
-|Administrador       | Implementar uma funcionalidade de  |                                        |
+|Usuário do sistema  | PODER CRIAR MAIS DE UM ACERVO PARA TEMAS DIFERENTES DE LEITURA    | ORGANIZAR MINHAS LEITURAS             |
           
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
