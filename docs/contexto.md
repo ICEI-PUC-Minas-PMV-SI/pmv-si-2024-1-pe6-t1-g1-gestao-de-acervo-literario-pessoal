@@ -89,6 +89,7 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |USUARIO DO SISTEMA  | CONFIGURAR METAS DE LEITURA    | VISUALIZAR VELOCIDADE/TEMPO LEITURA              |
 |USUARIO DO SISTEMA  | VISUALIZAR O TEMPO GASTO NA LEITURA    | VISUALIZAR LIVROS LIDOS              |
 |USUARIO DO SISTEMA  | REGISTRAR LIVROS QUE DEIXEI DE LER    | VISUALIZAR ABANDONONO DE LEITURA              |
+|USUARIO DO SISTEMA | PODER EDITAR O TEMA DO SISTEMA PARA DARK OU LIGHT | CONFIGURAÇÃO DO SISTEMA     |
 |USUARIO DO SISTEMA  | PODER CRIAR MAIS DE UM ACERVO PARA TEMAS DIFERENTES DE LEITURA    | ORGANIZAR MINHAS LEITURAS             |
 |ADMINISTRADOR DO SISTEMA | PROCESSO DE LOGIN E LOGOUT DO ADMINISTRADOR DO SISTEMA   | ACESSO AO SISTEMA            |
 |ADMINISTRADOR DO SISTEMA | EDIÇÃO DE DADOS DA CONTA DE ADMINISTRADOR   | CONFIGURAÇÃO DE USUÁRIO          |
@@ -96,7 +97,6 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |ADMINISTRADOR DO SISTEMA | TER ACESSO PARA EDIÇÃO, INCLUSÃO E EXCLUSÃO DE LIVROS| CONTROLE DE LIVROS        |
 |ADMINISTRADOR DO SISTEMA | NOTIFICAÇÃO AO USUÁRIO QUE UM LIVRO JÁ ESTÁ CADASTRADO | CONTROLE DE LIVROS     |
 |ADMINISTRADOR DO SISTEMA | EDITAR OU BLOQUEAR USUÁRIOS JÁ CADASTRADOS NO SISTEMA | GERENCIAR USUÁRIOS DO SISTEMA      |
-|ADMINISTRADOR DO SISTEMA | PODER EDITAR O TEMA DO SISTEMA PARA DARK OU LIGHT | CONFIGURAÇÃO DO SISTEMA     |
 |ADMINISTRADOR DO SISTEMA | REALIZAR O BACK-UP DE DADOS DO SISTEMA| CONFIGURAÇÃO DO SISTEMA     |
           
 
@@ -159,6 +159,27 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 4. Configuração de Metas de Leitura: Os usuários podem definir metas de leitura usando este serviço, especificando o número de livros que desejam ler em um determinado período de tempo.
 
 5. Visualização do Tempo Gasto na Leitura: Este serviço fornece aos usuários insights sobre o tempo dedicado à leitura de cada livro, permitindo que acompanhem seus hábitos de leitura ao longo do tempo.
+
+6. Registro de Livros Abandonados: Este recurso fornece aos usuários o registro de livros que não estão mais sendo lidos, fornecendo informações completas do livros como seu título, auto, até onde foi seu progresso com esse livro.
+
+7. Registro de Acervo Pessoal: Permite aos usuários a criação de um Acervo Pessoal, para cadastro e acompanhamento de sua coleção de livros.
+
+8. Registro de diferentes Temas para Acervo Pessoal: Permite aos usuários a edição e criação de uma maior variedade de acervos para diferentes coleções de temas variados.
+
+9. Personalização dos temas site para Dark ou Light: Permite ao usuário a alteração dos temas entre dark por ser mais relaxante para os olhos, especialmente em ambientes com pouca luz ou light por ser mais familiar para usuários que estão acostumados com interfaces tradicionais.
+
+10. Edição de Dados do Administrador do Sistema:  Permite ao adiministrador do sistema a edição de dados e controle de sua conta.
+
+11. Edição ou Bloquei de Usuários Cadastrados no Sistema: Permite ao administrador do sistema a edição das contas dos usuários já cadastrados no sistema, podendo realizar alteração dos dados ou bloqueio das contas.
+
+12. Notificação de Livros já Inclusos: Este recurso irá sinalizar aos usuários caso haja a tentativa de cadastro de um livro já incluso em seu acervo pessoal.
+
+13. Edição dos Acervos Pessoais de Usuários Cadastrados: Este recurso permite ao administrador do sistema gerenciar os acervos pessoais inseridos pelos usuários cadastrados no sistema, podendo editar, incluir ou excluir os acervos.
+
+14. Edição dos Livros Inclusos de Usuários Cadastrados: Este recurso permite ao administrador do sistema gerenciar os livros inseridos pelos usuários cadastrados no sistema, podendo editar, incluir ou excluir os livros.
+
+15. Controle de Back-Up dos dados do Sistema: Permite ao administrador do sistema realizar o controle e back-up dos acervos e livros cadastrados.
+ 
 
 
 # Gerenciamento de Projeto
