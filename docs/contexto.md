@@ -7,41 +7,50 @@
 ## Problema
 
 A organização e o acompanhamento de um acervo literário pessoal podem se tornar um desafio significativo na era digital. As soluções tradicionais, como anotações em cadernos ou planilhas, demonstram-se insuficientes para gerenciar coleções extensas ou diversificadas, tornando a experiência frustrante para os amantes da leitura.
+POrtanto, o problema que motiva este estudo é a possibilidade de se ter, em fácil acesso, uma plataforma eficiente e abrangente para o gerenciamento de bibliotecas pessoais. 
+Atualmente, muitos leitores enfrentam dificuldades em manter um registro preciso de seus livros, ademais, os amantes da leitura, apreciam a visualização de seu 'desempenho' liteário, e para isso, é interessante o registro e acompanhamento dos livros lidos no ano, o estabelecimento de metas de leitura,  assim como a atualização do status de leitura de seus livros.
+Além disso, muitos aplicativos existentes no mercado carecem de funcionalidades essenciais, como a capacidade de registrar informações detalhadas sobre os livros, categorizar adequadamente os itens do acervo e oferecer opções de busca avançada. Portanto, o problema central a ser abordado é como criar um aplicativo que atenda às necessidades dos usuários/leitores, oferecendo uma solução completa e eficaz para o gerenciamento de bibliotecas pessoais.
 
 ## Objetivos
-
+O objetivo deste estudo é desenvolver um aplicativo de catalogação de livros capaz de oferecer uma experiência eficiente e intuitiva para os usuários. Dentro desse contexto, identificamos a necessidade de resolver um problema recorrente enfrentado por entusiastas da leitura: a dificuldade em organizar e gerenciar suas bibliotecas pessoais de maneira eficaz. Com o objetivo de suprir essa lacuna, buscamos criar uma solução digital que permita aos usuários registrar, organizar e acessar facilmente informações sobre seus livros, tornando a experiência de catalogação mais fluida e agradável.
 
 #### Objetivo geral:
 
-- Desenvolver uma aplicação web, mobile e back-end 
+Desenvolver um aplicativo de catalogação de livros abrangente e intuitivo que atenda às necessidades dos usuários, proporcionando uma experiência de gerenciamento de bibliotecas pessoais eficaz e satisfatória. 
 
 #### Objetivos específicos:
 
-- Permitir a criação de coleções ilimitadas com base em critérios específicos do usuário.
-
-- Permitir a catalogação completa de cada livro, incluindo ISBN, título, autor, editora, data de publicação, gênero, sinopse.
+- Identificar as principais necessidades e desafios enfrentados pelos usuários no gerenciamento de suas bibliotecas pessoais.
+- Estudar aplicativos existentes no mercado para analisar suas funcionalidades, pontos fortes e limitações.
+- Definir os requisitos funcionais e não funcionais do aplicativo de catalogação de livros, com base nas demandas dos usuários e nas melhores práticas de desenvolvimento de software.
+- Projetar uma interface de usuário intuitiva e amigável que facilite a navegação e a utilização do aplicativo.
+- Desenvolver as funcionalidades essenciais do aplicativo, incluindo o registro de usuários, o cadastro de livros, a categorização do acervo, a busca avançada e o acompanhamento do status de leitura.
+- Integrar tecnologias como códigos de barras ou QR codes para facilitar o registro e a identificação de livros.
+- Testar e validar o aplicativo por meio de testes de usabilidade e feedback dos usuários, garantindo sua eficácia e qualidade.
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A justificativa para o problema apresentado reside na necessidade de fornecer uma solução eficaz e abrangente para um desafio significativo enfrentado por muitos amantes da leitura na era digital: o gerenciamento de suas bibliotecas pessoais. As soluções tradicionais, como cadernos ou planilhas, não conseguem acompanhar a demanda crescente por uma gestão mais sofisticada e acessível de acervos literários.
+A existência de uma plataforma adequada para o gerenciamento de bibliotecas pessoais possibilita que o usuário/leitor possa manter registros precisos de seus livros, bem como em acompanhar e visualizar seu progresso literário ao longo do tempo. O desejo de estabelecer metas de leitura, registrar livros lidos no ano e atualizar o status de leitura dos livros torna-se essencial para os entusiastas da leitura, destacando a necessidade de uma solução que possibilite tais funcionalidades de maneira integrada e intuitiva.
+Portanto, a criação de uma plataforma eficaz e abrangente para o gerenciamento de bibliotecas pessoais não apenas atende às necessidades imediatas dos usuários/leitores, mas também representa um avanço significativo na experiência de leitura na era digital. Ao oferecer uma solução que permite aos usuários manter registros precisos, estabelecer metas de leitura e acompanhar seu progresso literário, o aplicativo não apenas simplifica o processo de organização, mas também enriquece e aprimora a relação dos leitores com seus acervos literários. Deste modo, a implementação desse aplicativo pode não apenas resolver um problema premente, mas também promover uma experiência de leitura mais gratificante e envolvente para os usuários, contribuindo para a valorização e o fortalecimento da cultura literária na era digital.
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo da aplicação de catalogação de livros inclui uma ampla variedade de perfis, todos unidos pelo desejo de explorar, registrar e organizar suas experiências de leitura. A seguir, descrevemos os diferentes segmentos desse público:
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+1. Pessoas que querem ler mais:
+1.1 Estão interessadas em desenvolver o hábito da leitura e buscam uma ferramenta que as ajude a acompanhar seu progresso e motivá-las a ler mais.
+1.2 Podem ter conhecimentos prévios limitados sobre tecnologia, mas estão dispostas a aprender e explorar novas soluções que facilitem sua jornada de leitura.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+2. Pessoas que leem muito e querem registrar isso:
+2.1 São ávidos leitores que consomem uma grande quantidade de livros e desejam manter um registro organizado de suas leituras.
+2.2 Têm um bom entendimento de tecnologia e estão confortáveis em utilizar aplicativos para gerenciar suas bibliotecas pessoais.
+2.3 Valorizam a praticidade e a eficiência na organização de suas leituras, buscando uma solução que os ajude a maximizar sua experiência de leitura.
+
+3. Pessoas que não leem e querem começar a ler:
+3.1 Sentem-se motivadas a começar a ler mais e estão em busca de uma ferramenta que as auxilie nesse processo.
+3.2 Podem ter menos familiaridade com tecnologia, mas estão abertas a experimentar novas abordagens para incentivar sua jornada de leitura.
+3.3 Valorizam a simplicidade e a acessibilidade em uma aplicação, buscando uma solução que as ajude a descobrir e explorar novos livros de forma intuitiva.
 
 # Especificações do Projeto
 
@@ -51,37 +60,34 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+1 Ana Claudia Magalhães
+Ana Claudia tem 27 anos, é nutricionista recém formada e autônoma. Alugou uma sala há pouco tempo onde vem crescendo fornecendo planos alimentares a esportistas, adora estar com os amigos, conversar e aprender coisas novas. Como esta em busca da ascenção profissional e, portanto, muito ocupada, recentemente decidiu que quer dedicar mais tempo à leitura como uma forma de relaxamento e crescimento pessoal. Ela procura uma ferramenta simples e intuitiva para começar a acompanhar suas leituras.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+2 Pedro Paulo Oliveira
+Pedro tem 24 anos, é desenvolvedor de software e um entusiasta da tecnologia. Desde os 20 anos trabalha com tecnologia em uma multinacional brasileira. Está sempre em busca de novas ferramentas digitais para otimizar sua vida e gosta de ter informações na palma de sua mão. Adora ler mangas e livros de tecnologia, para isso, procura uma aplicação que forneca funcionalidades de organização e registro de suas leituras de lazer e de estudo.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+3 Lucas Meireles Silva
+Lucas tem 19 anos é um estudante universitário começando o curso de sistemas de informação, sempre ambicioso para adquirir novos conhecimentos,  interessado em ler livros em seu kindle sobre tecnologias antigas e novas surgindo no mercado, principalmenente sobre linguagens de baixo nível como C++.
+Lendo uma média de 1 livro por semana, ele deseja registrar suas leituras de forma organizada em seu acervo pessoal para sua organização efuturas referências acadêmicas.
+
+4 José Roberto Moreira
+José tem 64 anos, é um  funcionário de uma fazenda de uvas rosadas, passa muito tempo em uma cidade no interior e gostaria de começar a criar um novo hábito de leitura devido ao tempo ocioso que tem nos fins de semana e a expectativa de melhorar sua  vida profissional apesar da idade,  ele precisa  de um aplicativo intuitivo para gerenciar suas leituras e com uma interface amigável para pessoas com dificuldade em mexer no computador.
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Usuário do sistema  | Definir metas de leitura           | Vizualizar meu progresso               |
+|Administrador       | Implementar uma funcionalidade de 
+                     | configuração de metas de leitura   | Permitir que os usuarios definirem suas| 
+                                                          |  metas                                 |
+|Usuário do sistema  | Registrar livro                    |               
 
 Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+
 
 ## Requisitos
 
