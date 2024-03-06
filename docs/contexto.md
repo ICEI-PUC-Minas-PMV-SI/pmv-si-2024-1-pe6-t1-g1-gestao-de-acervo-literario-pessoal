@@ -86,17 +86,12 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 |USUARIO DO SISTEMA  | REALIZAR O CADASTRO NO APP    | ESTAR LOGADO E TER ACESSO AO APP               |
 |USUARIO DO SISTEMA  | REGISTRAR LIVRO QUE ESTOU LENDO    | TER CONTROLE DE LEITURA               |
 |USUARIO DO SISTEMA  | CATALOGAR OS LIVROS QUE LI    | VISUALIZAR LIVROS LIDOS              |
-|USUARIO DO SISTEMA  | CONFIGURAR METAS DE LEITURA    | VISUALIZAR VELOCIDADE/TEMPO LEITURA              |
-|USUARIO DO SISTEMA  | VISUALIZAR O TEMPO GASTO NA LEITURA    | VISUALIZAR LIVROS LIDOS              |
 |USUARIO DO SISTEMA  | REGISTRAR LIVROS QUE DEIXEI DE LER    | VISUALIZAR ABANDONONO DE LEITURA              |
-|USUARIO DO SISTEMA | PODER EDITAR O TEMA DO SISTEMA PARA DARK OU LIGHT | CONFIGURAÇÃO DO SISTEMA     |
 |USUARIO DO SISTEMA  | PODER CRIAR MAIS DE UM ACERVO PARA TEMAS DIFERENTES DE LEITURA    | ORGANIZAR MINHAS LEITURAS             |
 |ADMINISTRADOR DO SISTEMA | PROCESSO DE LOGIN E LOGOUT DO ADMINISTRADOR DO SISTEMA   | ACESSO AO SISTEMA            |
 |ADMINISTRADOR DO SISTEMA | EDIÇÃO DE DADOS DA CONTA DE ADMINISTRADOR   | CONFIGURAÇÃO DE USUÁRIO          |
 |ADMINISTRADOR DO SISTEMA | TER ACESSO PARA EDIÇÃO, INCLUSÃO E EXCLUSÃO DE ACERVO PESSOAL | CONTROLE DE ACERVOS PESSOAIS         |
 |ADMINISTRADOR DO SISTEMA | TER ACESSO PARA EDIÇÃO, INCLUSÃO E EXCLUSÃO DE LIVROS| CONTROLE DE LIVROS        |
-|ADMINISTRADOR DO SISTEMA | NOTIFICAÇÃO AO USUÁRIO QUE UM LIVRO JÁ ESTÁ CADASTRADO | CONTROLE DE LIVROS     |
-|ADMINISTRADOR DO SISTEMA | EDITAR OU BLOQUEAR USUÁRIOS JÁ CADASTRADOS NO SISTEMA | GERENCIAR USUÁRIOS DO SISTEMA      |
 |ADMINISTRADOR DO SISTEMA | REALIZAR O BACK-UP DE DADOS DO SISTEMA| CONFIGURAÇÃO DO SISTEMA     |
           
 
@@ -119,15 +114,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| Gerenciamento de acervos pessoais - ADMIN | ALTA |
 |RF-006| Gerenciamento de livros cadastrados - ADMIN | ALTA |
 |RF-007| Controle para backup de dados do sistema - ADMIN | ALTA |
-|RF-008| Permitir que o usuário visualize o tempo dedicado à leitura de cada livro | MÉDIA |
-|RF-009| Possibilitar que o usuário defina metas de leitura, como número de livros a serem lidos em um determinado período | MÉDIA |
 |RF-010| Edição dos dados e status dos livros cadastrados | MÉDIA |
 |RF-011| Editar dados da conta de usuário | MÉDIA | 
-|RF-012| Editar ou bloquear usuários do sistema - ADMIN | MÉDIA | 
-|RF-013| Permitir o usuário realizar o cadastro de mais de um Acervo Pessoal | MÉDIA |
-|RF-014| Notificar o usuário caso ele tente cadastrar um livro já cadastrado | MÉDIA |
-|RF-015| Permitir que o usuário personalize a interface do sistema com alteração de temas Dark e Light  | BAIXA |
-|RF-016| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
+|RF-012| Permitir o usuário realizar o cadastro de mais de um Acervo Pessoal | MÉDIA |
+|RF-013| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
 
 
 ### Requisitos não Funcionais
@@ -167,6 +157,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 8. Edição dos Acervos Pessoais de Usuários Cadastrados: Este recurso permite ao administrador do sistema gerenciar os acervos pessoais inseridos pelos usuários cadastrados no sistema, podendo editar, incluir ou excluir os acervos.
 
 9. Edição dos Livros Inclusos de Usuários Cadastrados: Este recurso permite ao administrador do sistema gerenciar os livros inseridos pelos usuários cadastrados no sistema, podendo editar, incluir ou excluir os livros.
+    
+10. Controle de Back-Up dos dados do Sistema: Permite ao administrador do sistema realizar o controle e back-up dos acervos e livros cadastrados.
 
 
  
