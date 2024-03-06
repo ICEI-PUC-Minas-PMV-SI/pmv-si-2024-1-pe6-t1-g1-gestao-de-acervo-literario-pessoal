@@ -134,11 +134,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-002| A interface deve ser intuitiva e fácil de usar, adequada para usuários com pouca familiaridade com tecnologia | ALTA | 
+|RNF-001| A interface deve ser intuitiva e fácil de usar, adequada para usuários com pouca familiaridade com tecnologia | ALTA | 
 |RNF-002| Garantir a segurança dos dados pessoais e de leitura dos usuários | ALTA |
-|RNF-002| Garantir que o sistema esteja disponível e acessível aos usuários a maior parte do tempo | ALTA | 
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | BAIXA | 
-|RNF-002| O sistema deve ser capaz de responder a solicitações dos usuários em tempo real |  BAIXA | 
+|RNF-003| Garantir que o sistema esteja disponível e acessível aos usuários a maior parte do tempo | ALTA | 
+|RNF-004| O sistema deve ser responsivo para rodar em um dispositivos móvel | BAIXA | 
+|RNF-005| O sistema deve ser capaz de responder a solicitações dos usuários em tempo real |  BAIXA | 
 
 ## Restrições
 
