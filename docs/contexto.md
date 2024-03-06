@@ -116,18 +116,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-002| Permitir o cadastro e edição de novo Acervo Pessoal  | ALTA |
 |RF-003| Permitir o usuário catalogar os livros que já leu | ALTA |
 |RF-004| Possibilitar que o usuário registre os livros que está atualmente lendo | ALTA |
-|RF-004| Gerenciamento de acervos pessoais - ADMIN | ALTA |
-|RF-005| Gerenciamento de livros cadastrados - ADMIN | ALTA |
-|RF-006| Controle para backup de dados do sistema - ADMIN | ALTA |
-|RF-007| Permitir que o usuário visualize o tempo dedicado à leitura de cada livro | MÉDIA |
-|RF-008| Possibilitar que o usuário defina metas de leitura, como número de livros a serem lidos em um determinado período | MÉDIA |
-|RF-009| Edição dos dados e status dos livros cadastrados | MÉDIA |
-|RF-010| Editar dados da conta de usuário | MÉDIA | 
-|RF-011| Editar ou bloquear usuários do sistema - ADMIN | MÉDIA | 
-|RF-012| Permitir o usuário realizar o cadastro de mais de um Acervo Pessoal | MÉDIA |
-|RF-013| Notificar o usuário caso ele tente cadastrar um livro já cadastrado | MÉDIA |
-|RF-014| Permitir que o usuário personalize a interface do sistema com alteração de temas Dark e Light  | BAIXA |
-|RF-015| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
+|RF-005| Gerenciamento de acervos pessoais - ADMIN | ALTA |
+|RF-006| Gerenciamento de livros cadastrados - ADMIN | ALTA |
+|RF-007| Controle para backup de dados do sistema - ADMIN | ALTA |
+|RF-008| Permitir que o usuário visualize o tempo dedicado à leitura de cada livro | MÉDIA |
+|RF-009| Possibilitar que o usuário defina metas de leitura, como número de livros a serem lidos em um determinado período | MÉDIA |
+|RF-010| Edição dos dados e status dos livros cadastrados | MÉDIA |
+|RF-011| Editar dados da conta de usuário | MÉDIA | 
+|RF-012| Editar ou bloquear usuários do sistema - ADMIN | MÉDIA | 
+|RF-013| Permitir o usuário realizar o cadastro de mais de um Acervo Pessoal | MÉDIA |
+|RF-014| Notificar o usuário caso ele tente cadastrar um livro já cadastrado | MÉDIA |
+|RF-015| Permitir que o usuário personalize a interface do sistema com alteração de temas Dark e Light  | BAIXA |
+|RF-016| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
 
 
 ### Requisitos não Funcionais
