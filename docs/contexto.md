@@ -1,8 +1,12 @@
 # Introdução
 
- Bibliotech é uma ferramenta inovadora que visa auxiliar leitores na organização e acompanhamento de suas obras favoritas, transformando essa experiência em uma jornada personalizada. Gerenciar um acervo literário pessoal até então uma tarefa trabalhosa, encontra na Bibliotech a solução ideal. Através de uma interface intuitiva e amigável, a plataforma permite a criação e personalização de coleções, facilitando a organização dos livros de acordo com as preferências e critérios de cada usuário.
- 
- Na Bibliotech, os usuários têm a capacidade de criar uma conta com credenciais exclusivas para iniciar a construção de seu próprio acervo pessoal. Dentro desse acervo, é possível criar coleções personalizadas, adicionando ou removendo livros conforme desejado. Cada livro em uma coleção pode ser catalogado detalhadamente, incluindo informações como ISBN, título, autor, editora, data de publicação, gênero, sinopse e avaliações. Para simplificar esse processo, a aplicação permite que os usuários preencham um formulário com o ISBN do livro. Ao acessar uma coleção, os usuários podem visualizar a lista de livros e, ao clicar em um livro específico, ter acesso a todos os seus detalhes. 
+Bibliotech é uma ferramenta inovadora que visa auxiliar leitores na organização e acompanhamento de suas obras favoritas, transformando essa experiência em uma jornada personalizada. Gerenciar um acervo literário pessoal até então uma tarefa trabalhosa, encontra na Bibliotech a solução ideal. Através de uma interface intuitiva e amigável, a plataforma permite a criação e personalização de coleções, facilitando a organização dos livros de acordo com as preferências e critérios de cada usuário.
+
+Na era digital, a gestão e o acompanhamento de um acervo literário pessoal representam um desafio significativo para muitos leitores. As soluções tradicionais, como anotações em cadernos ou planilhas, revelam-se inadequadas para gerenciar coleções extensas ou diversificadas, resultando em uma experiência frustrante para os apaixonados pela leitura. Este problema motiva a busca por uma plataforma eficiente e abrangente para o gerenciamento de bibliotecas pessoais, acessível e intuitiva para todos os tipos de usuários.
+
+Atualmente, muitos leitores enfrentam dificuldades para manter um registro preciso de seus livros e acompanhar seu progresso literário. Para os amantes da leitura, a visualização do seu "desempenho" literário é essencial, incluindo o registro e acompanhamento dos livros lidos no ano, o estabelecimento de metas de leitura e a atualização do status de leitura de seus livros. 
+
+Assim, visamos a criação de um aplicativo que atenda às necessidades dos usuários/leitores, oferecendo uma solução completa e eficaz para o gerenciamento de bibliotecas pessoais.
 
 ## Problema
 
