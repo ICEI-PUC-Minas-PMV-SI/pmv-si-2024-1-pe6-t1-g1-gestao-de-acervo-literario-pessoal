@@ -168,19 +168,20 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 1. Integração:
 2. Escopo:
-3. Cronograma:
-   - sprint 1: 01 de fevereiro a 10 de março - Gerenciar e documentar serviços de TI
-   - sprint 2: 11 de março a 14 de abril - Planejar, desenvolver e gerenciar uma arquitetura de aplicação distribuída
-   - sprint 3: 15 de abril a 12 de maio - Planejar, desenvolver e gerenciar APIs e Web Services
-   - sprint 4: 13 de maio  a 16 de junho - Planejar, desenvolver e gerenciar uma aplicação web 
-   - sprint 5: 17 de junho a 30 de junho - Planejar, desenvolver e gerenciar uma aplicação móvel
-4. Custos: 
-5. Qualidade:
-6. Recursos:
-7. Comunicações: alinhamento diário e reuniões semanais com os integrantes do grupo e professor.
-8. Riscos:
-0. Aquisições:
-10. Partes Interessadas:
+    Desenvolver uma ferramenta inovadora para auxiliar leitores na organização e acompanhamento de suas obras favoritas. A plataforma permitirá a criação de coleções personalizadas, baseadas em critérios como gênero, autor e data de publicação. Além disso, os usuários poderão visualizar seu acervo de forma intuitiva e acompanhar o progresso literário, registrando os livros lidos ao longo do ano.
+4. Cronograma:
+   - Sprint 1: 01 de fevereiro a 10 de março - Gerenciar e documentar serviços de TI
+   - Sprint 2: 11 de março a 14 de abril - Planejar, desenvolver e gerenciar uma arquitetura de aplicação distribuída
+   - Sprint 3: 15 de abril a 12 de maio - Planejar, desenvolver e gerenciar APIs e Web Services
+   - Sprint 4: 13 de maio  a 16 de junho - Planejar, desenvolver e gerenciar uma aplicação web 
+   - Sprint 5: 17 de junho a 30 de junho - Planejar, desenvolver e gerenciar uma aplicação móvel
+5. Custos: Os custos estimados incluem despesas com desenvolvimento, hospedagem, marketing e suporte técnico. Vamos considerar um orçamento de R$ 100.000 para todo o projeto.
+6. Qualidade: Garantir uma interface de usuário intuitiva e uma experiência de usuário fluida em todas as plataformas (web e móvel), por meio de revisões de código e feedback contínuo dos usuários.
+7. Recursos: Nossa equipe será composta por desenvolvedores, designers de interface e gerentes de projeto.
+8. Comunicações: Alinhamento diário e reuniões semanais com os integrantes do grupo e professor.
+9. Riscos: Possíveis atrasos no desenvolvimento devido a problemas técnicos inesperados ou mudanças nos requisitos do cliente.
+0. Aquisições: Para o sucesso do projeto, consideraremos a aquisição de licenças de software, serviços de hospedagem (falta especificar)
+10. Partes Interessadas: As partes interessadas incluem os usuários finais (leitores), nossa equipe de desenvolvimento e a comunidade literária em geral.
 
 ## Gerenciamento de Tempo
 
