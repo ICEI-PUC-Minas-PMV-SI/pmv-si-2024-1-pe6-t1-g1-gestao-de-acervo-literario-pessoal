@@ -189,9 +189,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+[Gerenciamento de Equipe(Sheet1).csv](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/files/14579990/Gerenciamento.de.Equipe.Sheet1.csv)
 
-![Simple Project Timeline](img/02-project-timeline.png)
 
 # Arquitetura da Solução
 
