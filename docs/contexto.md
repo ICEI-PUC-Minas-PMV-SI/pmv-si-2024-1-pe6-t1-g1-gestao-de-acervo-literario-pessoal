@@ -175,7 +175,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
    - Sprint 3: 15 de abril a 12 de maio - Planejar, desenvolver e gerenciar APIs e Web Services
    - Sprint 4: 13 de maio  a 16 de junho - Planejar, desenvolver e gerenciar uma aplicação web 
    - Sprint 5: 17 de junho a 30 de junho - Planejar, desenvolver e gerenciar uma aplicação móvel
-5. Custos: Os custos estimados incluem despesas com desenvolvimento, hospedagem, marketing e suporte técnico. Vamos considerar um orçamento de R$ 100.000 para todo o projeto.
+5. Custos: Os custos estimados incluem despesas com desenvolvimento, hospedagem e suporte técnico. Vamos considerar um orçamento de R$ 100.000 para todo o projeto.
 6. Qualidade: Garantir uma interface de usuário intuitiva e uma experiência de usuário fluida em todas as plataformas (web e móvel), por meio de revisões de código e feedback contínuo dos usuários.
 7. Recursos: Nossa equipe será composta por desenvolvedores, designers de interface e gerentes de projeto.
 8. Comunicações: Alinhamento diário e reuniões semanais com os integrantes do grupo e professor.
