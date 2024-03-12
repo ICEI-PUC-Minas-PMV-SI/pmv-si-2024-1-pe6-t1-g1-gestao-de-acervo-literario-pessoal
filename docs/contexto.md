@@ -185,13 +185,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 ## Gerenciamento de Tempo
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
-
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
-
-O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
-
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+ ![tabela](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/160793964/952802d2-27bf-4e0e-84cb-aad69118e432)
 
 ## Gerenciamento de Equipe
 
