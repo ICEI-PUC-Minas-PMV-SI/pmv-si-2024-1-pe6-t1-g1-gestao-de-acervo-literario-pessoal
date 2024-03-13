@@ -188,8 +188,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
  ![tabela](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/160793964/952802d2-27bf-4e0e-84cb-aad69118e432)
 
 ## Gerenciamento de Equipe
+[Gerenciamento de Equipe.pdf](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/files/14580051/Gerenciamento.de.Equipe.pdf)
 
-[Gerenciamento de Equipe(Sheet1).csv](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/files/14579990/Gerenciamento.de.Equipe.Sheet1.csv)
 
 
 # Arquitetura da Solução
