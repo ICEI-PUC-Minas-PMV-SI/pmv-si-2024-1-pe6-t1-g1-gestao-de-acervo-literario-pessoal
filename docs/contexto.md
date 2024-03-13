@@ -198,12 +198,12 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 ## Tecnologias Utilizadas
 
 1. Backend:
-   - Framework: Flask
-   - Linguagem: Python
+   - Framework: Express
+   - Linguagem: JS
 2. Frontend WEB:
    - Framework: Angular
    - Linguagem: TS
-2. Frontend MOBILE:
+3. Frontend MOBILE:
    - Framework: React Native
    - Linguagem: JS
 
