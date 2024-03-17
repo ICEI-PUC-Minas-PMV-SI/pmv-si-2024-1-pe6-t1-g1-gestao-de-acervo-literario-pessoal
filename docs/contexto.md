@@ -168,7 +168,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Arquitetura da Solução
 
-![Frontend](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/160793964/3177a06b-8368-4502-b911-a22a2f1265e0)
+![Frontend](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/blob/main/docs/img/BiblioTECH.png)
 
 ## Tecnologias Utilizadas
 
