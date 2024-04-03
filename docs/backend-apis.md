@@ -378,6 +378,33 @@ Erro 500
 }
 
 ### COLLECTIONS
+
+- Método: GET
+- URL: /collections
+- Parâmetros:
+  - title: string
+  - description: string
+    
+- Resposta:
+  - Sucesso (200 OK)
+     - Sucesso (200 OK)
+    {
+     "message": "Lista de Coleção recuperada com sucesso.",
+  "data": 
+    {
+  "title": "Coleção 1",
+  "description": "Coleção para livros de romance",
+    }
+}
+    }
+  - Erro (500)
+    {
+      "message": "Erro interno do servidor. Tente novamente mais tarde.",
+      "error": {
+        ...
+      }
+    }
+
 - Método: POST
 - URL: /collections
 - Parâmetros:
@@ -386,44 +413,84 @@ Erro 500
     
 - Resposta:
   - Sucesso (200 OK)
-    ```
     {
       "message": "Coleção criada com sucesso.",
       "data": {
         title: $title
       }
     }
-    ```
   - Erro (400)
-    ```
     {
       "message": "Requisição inválida. Verifique os parâmetros enviados.",
       "error": {
         ...
       }
     }
-    ```
   - Erro (500)
-    ```
     {
       "message": "Erro interno do servidor. Tente novamente mais tarde.",
       "error": {
         ...
       }
     }
-    ```
 
-- Método: GET
-
-  A FAZER - LISTAR COLLECTIONS
     
 - Método: PUT
+- URL: /collections
+- Parâmetros:
+  id  
+ - Resposta:
+  - Sucesso (200 OK)
+  {
+  "message": "Coleção atualizada com sucesso.",
+  "data": {
+    "title": "Novo Título",
+    "description": "Nova Descrição",
+ }
+}
 
-  A FAZER - EDITAR COLLECTIONS
+Erro 400
+{
+  "message": "Coleção não encontrado.",
+  "error": {
+    ...
+  }
+}
+
+Erro 500
+{
+  "message": "Erro interno do servidor. Tente novamente mais tarde.",
+  "error": {
+    ...
+  }
+}
   
 - Método: DELETE
+- URL: /collections
+- Parâmetros:
+  id  
+ - Resposta:
+  - Sucesso (200 OK)
+    {
+  "message": "Coleção excluída com sucesso."
+}
 
-  A FAZER - REMOVER COLLECTIONS
+
+Erro 404
+{
+  "message": "Coleção não encontrado.",
+  "error": {
+    ...
+  }
+}
+
+Erro 500
+{
+  "message": "Erro interno do servidor. Tente novamente mais tarde.",
+  "error": {
+    ...
+  }
+}
 
 
   ### EXPORT
