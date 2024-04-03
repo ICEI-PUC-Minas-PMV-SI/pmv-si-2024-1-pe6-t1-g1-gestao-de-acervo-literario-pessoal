@@ -227,10 +227,50 @@ Erro 500
   }
 }
 
-
-  A FAZER
-    
 ### BOOKS
+
+- Método: GET
+- URL: /books
+- Parâmetros:
+  - title: string
+  - authors: array
+  - punlishedDate: date
+  - description: string
+  - edition: string
+  - isbn: string
+  - pageCount: integer
+  - categories: array
+  - read: picklist (Lido, Não Lido, Lendo, Abandonado)
+  - collection: 
+    
+- Resposta:
+  - Sucesso (200 OK)
+     - Sucesso (200 OK)
+    {
+     "message": "Lista de livros recuperada com sucesso.",
+  "data": 
+    {
+      "title": "The Name of The Wind",
+      "authors": "Patrick Rothfuss",
+      "publishedDate": "09-04-2009",
+      "description": "O nome do vento acompanha a trajetória de Kote e as duas forças que movem sua vida...",
+      "edition": "1° Edição",
+      "isbn": "8599296493",
+      "pageCount": "656",
+      "categories": "Fantasia",
+      "read": "Lendo",
+      "collection": "",
+    }
+}
+    }
+  - Erro (500)
+    {
+      "message": "Erro interno do servidor. Tente novamente mais tarde.",
+      "error": {
+        ...
+      }
+    }
+
 - Método: POST
 - URL: /books
 - Parâmetros:
@@ -247,7 +287,7 @@ Erro 500
     
 - Resposta:
   - Sucesso (200 OK)
-    ```
+   
     {
       "message": "Livro registrado com sucesso.",
       "data": {
@@ -256,31 +296,54 @@ Erro 500
     }
     ```
   - Erro (400)
-    ```
+  
     {
       "message": "Requisição inválida. Verifique os parâmetros enviados.",
       "error": {
         ...
       }
     }
-    ```
+    
   - Erro (500)
-    ```
     {
       "message": "Erro interno do servidor. Tente novamente mais tarde.",
       "error": {
         ...
       }
     }
-    ```
 
-- Método: GET
-
-  A FAZER
-    
 - Método: PUT
+- URL: /users
+- Parâmetros:
+  id  
+ - Resposta:
+  - Sucesso (200 OK)
+   {
+  "message": "Dados de Livro atualizados com sucesso.",
+  "data": {
+  "username": "NovoUsername",
+  "password": "NovaSenha",
+  "email": "novoemail@example.com",
+  "firstname": "NovoNome",
+  "lastname": "NovoSobrenome"
+}
 
-  A FAZER 
+Erro 400
+{
+  "message": "Requisição inválida. Verifique os parâmetros enviados.",
+  "error": {
+    ...
+  }
+}
+
+
+Erro 500
+{
+  "message": "Erro interno do servidor. Tente novamente mais tarde.",
+  "error": {
+    ...
+  }
+}
   
 - Método: DELETE
 
