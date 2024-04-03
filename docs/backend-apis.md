@@ -486,13 +486,22 @@ Erro 500
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
+1. Requisitos de hardware e software necessários:
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+- Hardware: Um servidor com pelo menos 4 núcleos de CPU e 8 GB de RAM é recomendado para lidar com a carga esperada da aplicação Bibliotech.
+- Software: Sistema operacional linux e windows, com as ferramentas de desenvolvimento necessárias instaladas, como VSCode, Node.js, MySQL.
+
+2. Escolha da plataforma de hospedagem:
+- AWS
+
+3.Configuração do ambiente de implantação:
+
+- Dependências necessárias no servidor:Node.js, MySQL.
+- Variáveis de ambiente necessárias: credenciais do banco de dados, chaves de API.
+
+4.Deploy da aplicação:
+
+5.Testes no ambiente de produção
 
 ## Testes
 
