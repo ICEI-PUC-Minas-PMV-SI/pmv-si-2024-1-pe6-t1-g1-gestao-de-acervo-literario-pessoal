@@ -20,7 +20,7 @@ A arquitetura das APIs do Bibliotech segue um padrão RESTful, onde cada recurso
 * Middleware de Segurança: Responsável por autenticar e autorizar os usuários antes de permitir o acesso aos endpoints da API.
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+
 // A modelagem da aplicação inclui as seguintes entidades principais:
 // Usuário: Representa um usuário registrado na plataforma Bibliotech.
 // Livro: Representa um livro dentro da biblioteca pessoal de um usuário.
@@ -29,7 +29,6 @@ A arquitetura das APIs do Bibliotech segue um padrão RESTful, onde cada recurso
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
 // O fluxo de dados na aplicação começa com uma requisição HTTP feita por um cliente externo ou interno, que é roteada para o endpoint correspondente na API. O controlador então chama o serviço apropriado para processar a requisição, que pode envolver acesso ao banco de dados para recuperar ou modificar informações. Uma resposta é então enviada de volta ao cliente, contendo os dados solicitados ou confirmando o sucesso da operação.
 
 
@@ -65,8 +64,6 @@ A arquitetura das APIs do Bibliotech segue um padrão RESTful, onde cada recurso
 - API Google Books (ISBN Search)
   
 ## API Endpoints
-
-[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
 
 ### AUTHENTICATION
 - Método: POST
@@ -501,32 +498,32 @@ Erro 500
     
 - Resposta:
   - Sucesso (200 OK)
-    ```
+   
     {
       "message": "Coleção criada com sucesso.",
       "data": {
         media: appplication/csv file
       }
     }
-    ```
+   
   - Erro (400)
-    ```
+   
     {
       "message": "Requisição inválida. Verifique os parâmetros enviados.",
       "error": {
         ...
       }
     }
-    ```
+   
   - Erro (500)
-    ```
+   
     {
       "message": "Erro interno do servidor. Tente novamente mais tarde.",
       "error": {
         ...
       }
     }
-    ```
+  
 
 ### ISBN Search
 - Método: GET
@@ -536,7 +533,7 @@ Erro 500
 
 - Resposta:
   - Sucesso (200 OK)
-    ```
+  
     {
       "message": "Dados do livro retornados com sucesso.",
       "data": {
@@ -550,25 +547,24 @@ Erro 500
       - categories: array
       }
     }
-    ```
+  
   - Erro (400)
-    ```
+    
     {
       "message": "Requisição inválida. Verifique os parâmetros enviados.",
       "error": {
         ...
       }
     }
-    ```
+
   - Erro (500)
-    ```
+   
     {
       "message": "Erro interno do servidor. Tente novamente mais tarde.",
       "error": {
         ...
       }
     }
-    ```
 
 ## Considerações de Segurança
 
