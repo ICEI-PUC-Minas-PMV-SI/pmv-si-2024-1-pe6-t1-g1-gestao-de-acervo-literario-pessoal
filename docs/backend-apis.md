@@ -77,34 +77,65 @@ A arquitetura das APIs do Bibliotech segue um padrão RESTful, onde cada recurso
 
 - Resposta:
   - Sucesso (200 OK)
-    ```
     {
       "message": "Usuário autenticado com sucesso.",
       "data": {
         token: $bearer_token
       }
     }
-    ```
   - Erro (400)
-    ```
-    {
-      "message": "Requisição inválida. Verifique os parâmetros enviados.",
-      "error": {
-        ...
-      }
-    }
-    ```
+  {
+  "message": "Requisição inválida. Verifique os parâmetros enviados.",
+  "error": 
+{
+    "type": "InvalidParameter",
+    "description": "O parâmetro 'username' é obrigatório e não pode estar vazio."
+  },
+{
+    "type": "InvalidParameter",
+    "description": "O parâmetro 'passwords' esta errado."
+  }
+}
   - Erro (500)
-    ```
+{
+  "message": "Erro interno do servidor. Tente novamente mais tarde.",
+  "error": {
+    "type": "InternalError",
+    "description": "Ocorreu um erro ao processar a solicitação de autenticação. Por favor, entre em contato com o suporte técnico."
+  }
+}
+
+### USERS
+
+- Método: GET
+- URL: /users
+- Parâmetros:
+  - username:
+  - password:
+  - email:
+  - firstname
+  - lastname
+ - Resposta:
+  - Sucesso (200 OK)
+    {
+     "message": "Lista de usuários recuperada com sucesso.",
+  "data": 
+    {
+      "username": "username1",
+      "email": "email1@example.com",
+      "firstname": "John",
+      "lastname": "Doe"
+    }
+}
+    }
+  - Erro (500)
     {
       "message": "Erro interno do servidor. Tente novamente mais tarde.",
       "error": {
         ...
       }
     }
-    ```
 
-### USERS
 - Método: POST
 - URL: /users
 - Parâmetros:
@@ -115,38 +146,87 @@ A arquitetura das APIs do Bibliotech segue um padrão RESTful, onde cada recurso
   - lastname
 - Resposta:
   - Sucesso (200 OK)
-    ```
     {
       "message": "Usuário criado com sucesso.",
       "data": {
         username: $username
       }
     }
-    ```
   - Erro (400)
-    ```
     {
       "message": "Requisição inválida. Verifique os parâmetros enviados.",
       "error": {
-        ...
       }
     }
     ```
   - Erro (500)
-    ```
     {
       "message": "Erro interno do servidor. Tente novamente mais tarde.",
       "error": {
         ...
       }
     }
-    ```
 
 - Método: PUT
+- URL: /users
+- Parâmetros:
+  id  
+ - Resposta:
+  - Sucesso (200 OK)
+   {
+  "message": "Usuário atualizado com sucesso.",
+  "data": {
+  "username": "NovoUsername",
+  "password": "NovaSenha",
+  "email": "novoemail@example.com",
+  "firstname": "NovoNome",
+  "lastname": "NovoSobrenome"
+}
 
-  A FAZER 
-  
+Erro 400
+{
+  "message": "Requisição inválida. Verifique os parâmetros enviados.",
+  "error": {
+    ...
+  }
+}
+
+
+Erro 500
+{
+  "message": "Erro interno do servidor. Tente novamente mais tarde.",
+  "error": {
+    ...
+  }
+}
+
 - Método: DELETE
+- URL: /users
+- Parâmetros:
+  id  
+ - Resposta:
+  - Sucesso (200 OK)
+    {
+  "message": "Usuário excluído com sucesso."
+}
+
+
+Erro 404
+{
+  "message": "Usuário não encontrado.",
+  "error": {
+    ...
+  }
+}
+
+Erro 500
+{
+  "message": "Erro interno do servidor. Tente novamente mais tarde.",
+  "error": {
+    ...
+  }
+}
+
 
   A FAZER
     
