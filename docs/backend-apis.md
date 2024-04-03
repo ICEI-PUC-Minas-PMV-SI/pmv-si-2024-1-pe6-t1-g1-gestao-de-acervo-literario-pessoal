@@ -259,7 +259,7 @@ Erro 500
       "pageCount": "656",
       "categories": "Fantasia",
       "read": "Lendo",
-      "collection": "",
+      "collection": "Coleção1",
     }
 }
     }
@@ -294,7 +294,7 @@ Erro 500
         title: $title
       }
     }
-    ```
+ 
   - Erro (400)
   
     {
@@ -313,29 +313,34 @@ Erro 500
     }
 
 - Método: PUT
-- URL: /users
+- URL: /books
 - Parâmetros:
   id  
  - Resposta:
   - Sucesso (200 OK)
-   {
-  "message": "Dados de Livro atualizados com sucesso.",
+  {
+  "message": "Livro atualizado com sucesso.",
   "data": {
-  "username": "NovoUsername",
-  "password": "NovaSenha",
-  "email": "novoemail@example.com",
-  "firstname": "NovoNome",
-  "lastname": "NovoSobrenome"
+    "title": "Novo Título",
+    "authors": ["Novo Autor"],
+    "publishedDate": "03-04-2024",
+    "description": "Nova descrição do livro",
+    "edition": "Nova Edição",
+    "isbn": "9780123456789",
+    "pageCount": 500,
+    "categories": ["Nova Categoria"],
+    "read": "Lendo",
+    "collection": "Nova Coleção"
+ }
 }
 
 Erro 400
 {
-  "message": "Requisição inválida. Verifique os parâmetros enviados.",
+  "message": "Livro não encontrado.",
   "error": {
     ...
   }
 }
-
 
 Erro 500
 {
@@ -346,8 +351,31 @@ Erro 500
 }
   
 - Método: DELETE
+- URL: /books
+- Parâmetros:
+  id  
+ - Resposta:
+  - Sucesso (200 OK)
+    {
+  "message": "Livro excluído com sucesso."
+}
 
-  A FAZER
+
+Erro 404
+{
+  "message": "Livro não encontrado.",
+  "error": {
+    ...
+  }
+}
+
+Erro 500
+{
+  "message": "Erro interno do servidor. Tente novamente mais tarde.",
+  "error": {
+    ...
+  }
+}
 
 ### COLLECTIONS
 - Método: POST
