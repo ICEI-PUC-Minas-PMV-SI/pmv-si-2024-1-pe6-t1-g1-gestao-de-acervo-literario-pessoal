@@ -1,41 +1,59 @@
 # APIs e Web Services
 
-O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.
-
-Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.
-
-[Inclua uma breve descrição do projeto.]
+O projeto Bibliotech é uma plataforma de gestão de biblioteca pessoal que visa ajudar os usuários a organizar, catalogar e acompanhar suas leituras de forma eficiente. Através de uma interface intuitiva e amigável, os usuários podem registrar os livros que estão lendo, os livros que já leram e os livros que desejam ler no futuro. A plataforma também permite a criação de acervos personalizados e fornece funcionalidades de backup de dados para garantir a segurança das informações dos usuários.
 
 ## Objetivos da API
 
-O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?
-
-[Inclua os objetivos da sua api.]
+*Permitir que aplicativos externos acessem e interajam com os dados do sistema Bibliotech de forma segura e eficiente.
+* Fornecer operações CRUD (Create, Read, Update, Delete) para entidades principais, como usuários, livros e acervos pessoais.
+* Facilitar a integração de novos recursos e funcionalidades na plataforma Bibliotech.
+* Garantir a segurança dos dados dos usuários por meio de autenticação e autorização adequadas.
 
 
 ## Arquitetura
 
-[Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
+A arquitetura das APIs do Bibliotech segue um padrão RESTful, onde cada recurso é representado por um endpoint específico. Os componentes principais incluem:
 
+* Controladores: Responsáveis por receber as requisições HTTP, processá-las e encaminhá-las para os serviços apropriados.
+* Serviços: Lógica de negócios que manipula as operações CRUD e outras funcionalidades da aplicação.
+* Modelo de Dados: Representação das entidades principais do sistema, como usuários, livros e acervos pessoais.
+* Middleware de Segurança: Responsável por autenticar e autorizar os usuários antes de permitir o acesso aos endpoints da API.
 
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
-
+// A modelagem da aplicação inclui as seguintes entidades principais:
+// Usuário: Representa um usuário registrado na plataforma Bibliotech.
+// Livro: Representa um livro dentro da biblioteca pessoal de um usuário.
+// Acervo Pessoal: Representa uma coleção de livros organizada por um usuário.
+// Backup: Representa uma cópia de segurança dos dados da aplicação.
 
 ## Fluxo de Dados
 
 [Diagrama ou descrição do fluxo de dados na aplicação.]
+// O fluxo de dados na aplicação começa com uma requisição HTTP feita por um cliente externo ou interno, que é roteada para o endpoint correspondente na API. O controlador então chama o serviço apropriado para processar a requisição, que pode envolver acesso ao banco de dados para recuperar ou modificar informações. Uma resposta é então enviada de volta ao cliente, contendo os dados solicitados ou confirmando o sucesso da operação.
 
 
 ## Requisitos Funcionais
 
-[Liste os principais requisitos funcionais da aplicação.]
-
+|ID    | Descrição do Requisito  | Prioridade |
+|------|-----------------------------------------|----|
+|RF-001| Processamento de login e logout no site | ALTA | 
+|RF-002| Permitir o cadastro e edição de novo Acervo Pessoal  | ALTA |
+|RF-003| Permitir o usuário catalogar os livros que já leu | ALTA |
+|RF-004| Possibilitar que o usuário registre os livros que está atualmente lendo | ALTA |
+|RF-007| Controle para backup de dados do sistema - Exportar Dados | ALTA |
+|RF-010| Edição dos dados e status dos livros cadastrados | MÉDIA |
+|RF-011| Editar dados da conta de usuário | MÉDIA | 
+|RF-012| Permitir o usuário realizar o cadastro de mais de um Acervo Pessoal | MÉDIA |
+|RF-013| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
 
 ## Requisitos Não Funcionais
 
-[Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
-
+|ID     | Descrição do Requisito  |Prioridade |
+|-------|-------------------------|----|
+|RNF-001| A interface deve ser intuitiva e fácil de usar, adequada para usuários com pouca familiaridade com tecnologia | ALTA | 
+|RNF-002| Garantir a segurança dos dados pessoais e de leitura dos usuários | ALTA |
+|RNF-003| O sistema deve ser responsivo para rodar em um dispositivos móvel | BAIXA |
 
 ## Tecnologias Utilizadas
 
@@ -90,7 +108,7 @@ O primeiro passo é definir os objetivos da sua API. O que você espera alcança
 - Método: POST
 - URL: /users
 - Parâmetros:
-  - username: [descrição]
+  - username:
   - password:
   - email:
   - firstname
