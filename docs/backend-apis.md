@@ -35,43 +35,288 @@ O primeiro passo é definir os objetivos da sua API. O que você espera alcança
 
 ## Tecnologias Utilizadas
 
-Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.
-
-[Lista das tecnologias principais que serão utilizadas no projeto.]
-
+- Framework Node Express.Js 
+- ORM Prisma 
+- Biblioteca Passport.Js
+- Biblioteca json2xml
+- API Google Books (ISBN Search)
+  
 ## API Endpoints
 
 [Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]
 
-### Endpoint 1
-- Método: GET
-- URL: /endpoint1
+### AUTHENTICATION
+- Método: POST
+- URL: /auth
 - Parâmetros:
-  - param1: [descrição]
+  - username: 
+  - password:
+
 - Resposta:
   - Sucesso (200 OK)
     ```
     {
-      "message": "Success",
+      "message": "Usuário autenticado com sucesso.",
       "data": {
+        token: $bearer_token
+      }
+    }
+    ```
+  - Erro (400)
+    ```
+    {
+      "message": "Requisição inválida. Verifique os parâmetros enviados.",
+      "error": {
         ...
       }
     }
     ```
-  - Erro (4XX, 5XX)
+  - Erro (500)
     ```
     {
-      "message": "Error",
+      "message": "Erro interno do servidor. Tente novamente mais tarde.",
       "error": {
         ...
       }
     }
     ```
 
+### USERS
+- Método: POST
+- URL: /users
+- Parâmetros:
+  - username: [descrição]
+  - password:
+  - email:
+  - firstname
+  - lastname
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "message": "Usuário criado com sucesso.",
+      "data": {
+        username: $username
+      }
+    }
+    ```
+  - Erro (400)
+    ```
+    {
+      "message": "Requisição inválida. Verifique os parâmetros enviados.",
+      "error": {
+        ...
+      }
+    }
+    ```
+  - Erro (500)
+    ```
+    {
+      "message": "Erro interno do servidor. Tente novamente mais tarde.",
+      "error": {
+        ...
+      }
+    }
+    ```
+
+- Método: PUT
+
+  A FAZER 
+  
+- Método: DELETE
+
+  A FAZER
+    
+### BOOKS
+- Método: POST
+- URL: /BOOKS
+- Parâmetros:
+  - title: string
+  - authors: array
+  - punlishedDate: date
+  - description: string
+  - edition: string
+  - isbn: string
+  - pageCount: integer
+  - categories: array
+  - read: picklist (Lido, Não Lido, Lendo, Abandonado)
+  - collection: 
+    
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "message": "Livro registrado com sucesso.",
+      "data": {
+        title: $title
+      }
+    }
+    ```
+  - Erro (400)
+    ```
+    {
+      "message": "Requisição inválida. Verifique os parâmetros enviados.",
+      "error": {
+        ...
+      }
+    }
+    ```
+  - Erro (500)
+    ```
+    {
+      "message": "Erro interno do servidor. Tente novamente mais tarde.",
+      "error": {
+        ...
+      }
+    }
+    ```
+
+- Método: GET
+
+  A FAZER
+    
+- Método: PUT
+
+  A FAZER 
+  
+- Método: DELETE
+
+  A FAZER
+
+### COLLECTIONS
+- Método: POST
+- URL: /COLLECTIONS
+- Parâmetros:
+  - title: string
+  - description: string
+    
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "message": "Coleção criada com sucesso.",
+      "data": {
+        title: $title
+      }
+    }
+    ```
+  - Erro (400)
+    ```
+    {
+      "message": "Requisição inválida. Verifique os parâmetros enviados.",
+      "error": {
+        ...
+      }
+    }
+    ```
+  - Erro (500)
+    ```
+    {
+      "message": "Erro interno do servidor. Tente novamente mais tarde.",
+      "error": {
+        ...
+      }
+    }
+    ```
+
+- Método: GET
+
+  A FAZER - LISTAR COLLECTIONS
+    
+- Método: PUT
+
+  A FAZER - EDITAR COLLECTIONS
+  
+- Método: DELETE
+
+  A FAZER - REMOVER COLLECTIONS
+
+
+  ### EXPORT
+- Método: GET
+- URL: /EXPORT
+- Parâmetros:
+  - username: string
+    
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "message": "Coleção criada com sucesso.",
+      "data": {
+        media: appplication/csv file
+      }
+    }
+    ```
+  - Erro (400)
+    ```
+    {
+      "message": "Requisição inválida. Verifique os parâmetros enviados.",
+      "error": {
+        ...
+      }
+    }
+    ```
+  - Erro (500)
+    ```
+    {
+      "message": "Erro interno do servidor. Tente novamente mais tarde.",
+      "error": {
+        ...
+      }
+    }
+    ```
+
+### ISBN Search
+- Método: GET
+- URL: /isbn
+- Parâmetros:
+  - isbn: string
+
+- Resposta:
+  - Sucesso (200 OK)
+    ```
+    {
+      "message": "Dados do livro retornados com sucesso.",
+      "data": {
+      - title: string
+      - authors: array
+      - punlishedDate: date
+      - description: string
+      - edition: string
+      - isbn: string
+      - pageCount: integer
+      - categories: array
+      }
+    }
+    ```
+  - Erro (400)
+    ```
+    {
+      "message": "Requisição inválida. Verifique os parâmetros enviados.",
+      "error": {
+        ...
+      }
+    }
+    ```
+  - Erro (500)
+    ```
+    {
+      "message": "Erro interno do servidor. Tente novamente mais tarde.",
+      "error": {
+        ...
+      }
+    }
+    ```
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+- Todos os endpoints são protegidos por autenticação via token de acesso, com exceção da criação de usuário no /users (POST).
+- Todos os endpoints fazem uso de HTTPS, para criptografar os dados em trânsito e proteger contra ataques de interceptação.
+- Os endpoints estão sujeitos à taxa limite de uso para evitar ataques e garantir uma utilização justa dos recursos do servidor.
+- Todas as entradas de dados recebidas pela API devem ser validadas para evitar ataques de injeção de código, como SQL injection e XSS (Cross-Site Scripting).
+- A API está sujeito a versionamento, com atualizações e correções de segurança para mitigar vulnerabilidades conhecidas.
+- As bibliotecas de terceiros utilizadas devem ser mantidas devidamente atualizadas para evitar vulnerabilidades conhecidas. 
 
 ## Implantação
 
@@ -96,3 +341,9 @@ Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs
 # Referências
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+
+https://expressjs.com/pt-br/
+https://www.prisma.io/docs/orm
+https://www.passportjs.org/docs/
+https://swagger.io/specification/
+https://developer.mozilla.org/en-US/docs/Web/HTTP
