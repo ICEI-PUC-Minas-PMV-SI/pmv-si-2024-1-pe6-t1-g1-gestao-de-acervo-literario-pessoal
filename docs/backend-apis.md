@@ -17,6 +17,7 @@ O primeiro passo é definir os objetivos da sua API. O que você espera alcança
 
 [Descrição da arquitetura das APIs, incluindo os componentes e suas interações.]
 
+
 ## Modelagem da Aplicação
 [Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
 
@@ -25,16 +26,20 @@ O primeiro passo é definir os objetivos da sua API. O que você espera alcança
 
 [Diagrama ou descrição do fluxo de dados na aplicação.]
 
+
 ## Requisitos Funcionais
 
 [Liste os principais requisitos funcionais da aplicação.]
+
 
 ## Requisitos Não Funcionais
 
 [Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
 
+
 ## Tecnologias Utilizadas
 
+- MySQL
 - Framework Node Express.Js 
 - ORM Prisma 
 - Biblioteca Passport.Js
@@ -129,7 +134,7 @@ O primeiro passo é definir os objetivos da sua API. O que você espera alcança
     
 ### BOOKS
 - Método: POST
-- URL: /BOOKS
+- URL: /books
 - Parâmetros:
   - title: string
   - authors: array
@@ -185,7 +190,7 @@ O primeiro passo é definir os objetivos da sua API. O que você espera alcança
 
 ### COLLECTIONS
 - Método: POST
-- URL: /COLLECTIONS
+- URL: /collections
 - Parâmetros:
   - title: string
   - description: string
@@ -234,7 +239,7 @@ O primeiro passo é definir os objetivos da sua API. O que você espera alcança
 
   ### EXPORT
 - Método: GET
-- URL: /EXPORT
+- URL: /export
 - Parâmetros:
   - username: string
     
