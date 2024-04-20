@@ -9,6 +9,7 @@ O projeto Bibliotech é uma plataforma de gestão de biblioteca pessoal que visa
 * Facilitar a integração de novos recursos e funcionalidades na plataforma Bibliotech.
 * Garantir a segurança dos dados dos usuários por meio de autenticação e autorização adequadas.
 
+<img src="https://en.wikipedia.org/wiki/Raccoon#/media/File:Raccoon_in_Central_Park_(35264).jpg)" alt="Texto alternativo da imagem">
 
 ## Arquitetura
 
