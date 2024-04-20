@@ -27,6 +27,8 @@ A arquitetura das APIs do Bibliotech segue um padrão RESTful, onde cada recurso
 // Acervo Pessoal: Representa uma coleção de livros organizada por um usuário.
 // Backup: Representa uma cópia de segurança dos dados da aplicação.
 
+![Diagrama de Modelagem](img/Bibliotech.jpg)
+
 ## Fluxo de Dados
 
 // O fluxo de dados na aplicação começa com uma requisição HTTP feita por um cliente externo ou interno, que é roteada para o endpoint correspondente na API. O controlador então chama o serviço apropriado para processar a requisição, que pode envolver acesso ao banco de dados para recuperar ou modificar informações. Uma resposta é então enviada de volta ao cliente, contendo os dados solicitados ou confirmando o sucesso da operação.
