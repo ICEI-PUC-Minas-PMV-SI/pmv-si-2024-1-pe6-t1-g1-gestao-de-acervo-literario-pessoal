@@ -605,6 +605,19 @@ Erro 500
 4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
 5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
+| Caso de Teste ID   | Modulo   | Ação Específica do Teste  | Resultado Esperado | Resultado Atual |  
+|-----------------|-----------------|-----------------|-----------------|-----------------|
+| LOG-01  | User  | Acessar bibliotech.com > Clicar em "Cadastrar novo usuário" > Preencher dados obrigatórios > Clicar em "Criar" | Realizar o cadastro de um novo usuário  | Pendente |
+| LOG-02  | User  | Acessar bibliotech.com > Preencher dados de usuário e senha > Clicar em "Entrar" | Realizar o login no site  | Pendente |
+| LOG-03  | User  | Logado em bibliotech.com > Clicar no botão "sair" do site  | Realizar o logout no site  | Pendente |
+| LOG-04  | User  | Logado em bibliotech.com > Clicar no ícone de engrenagem do site > Clicar na opção editar > Preencher dados obrigatórios > Clicar no botão "Salvar"  | Realizar a alteração de dados de usuário  | Pendente |
+| LOG-05  | User  | Acessar bibliotech.com de um dispositivo móvel > Preencher dados de usuário e senha > Clicar em "Entrar" | Realizar o login no site de um dispositvo móvel | Pendente |
+| COLLECTION-01  | Collection  | Logado em bibliotech.com > Acessar modulos de "Acervo Pessoal" no menu esquerdo > Clicar em "Criar Novo Acervo" > Preencher dados obrigatórios > Clicar em "Cadastrar Novo Acervo"  | Realizar o cadastro de novo Acervo de Livros  | Pendente |
+| COLLECTION-02  | Collection  | Logado em bibliotech.com > Acessar modulos de "Acervo Pessoal" no menu esquerdo > Selecionar um dos acervos criados  > Clicar no botão "Editar Dados" > Preencher dados obrigatórios > Clicar em "Salvar" para confirmação alteração  | Realizar a alteração de dados do Acervo Pessoal  | Pendente |
+| COLLECTION-03 | Collection  | Logado em bibliotech.com > Acessar modulos de "Acervo Pessoal" no menu esquerdo > Selecionar um dos Acervos Pessoais > Clicar em "Exportar Acervo Pessoal em arquivo cvs"  | Realizar a exportação de acervo selecionado  | Pendente |
+| BOOK-01  | Book  | Logado em bibliotech.com > Acessar o modulo de books no menu esquerdo > Clicar em "Adicionar novo livro" > Preencher dados obrigatórios > Clicar em "Cadastrar novo livro"  | Realizar o cadastro de novo livro  | Pendente |
+| BOOK-02  | Book  | Logado em bibliotech.com > Acessar o modulo de books no menu esquerdo > Selecionar um dos Livros > Clicar em editar livro > Selecionar campo de "status" do livro > Preencher dados obrigatórios > Clicar em "Salvar"  | Realizar a atualização de status dos livros ou editar suas informações  | Pendente |
+
 # Referências
 
 Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
