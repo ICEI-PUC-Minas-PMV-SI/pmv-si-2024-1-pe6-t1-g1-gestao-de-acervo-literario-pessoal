@@ -92,14 +92,15 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Processamento de login e logout no site | ALTA | 
-|RF-002| Permitir o cadastro e edição de novo Acervo Pessoal  | ALTA |
-|RF-003| Permitir a edição dos dados e status dos livros cadastrados | ALTA |
-|RF-004| Possibilitar que o usuário registre os livros que está atualmente lendo | ALTA |
-|RF-005| Permitir o usuário exportar sua coleção no acervo pessoal em arquivo csv | MÉDIA |
-|RF-006| Editar dados da conta de usuário | MÉDIA | 
-|RF-007| Permitir o usuário realizar o cadastro de mais de um Acervo Pessoal | MÉDIA |
-|RF-008| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
+|RF-001| Permitir o cadastro de novo usuário no site| ALTA |
+|RF-002| Processamento de login e logout no site | ALTA | 
+|RF-003| Permitir o cadastro de um novo Acervo Pessoal  | ALTA |
+|RF-004| Possibilitar que o usuário registre os livros que está lendo | ALTA |
+|RF-005| Permitir a edição dos dados e status dos livros cadastrados | MÉDIA |
+|RF-006| Permitir o usuário exportar sua coleção no acervo pessoal em arquivo csv | MÉDIA |
+|RF-007| Permitir editar dados da conta de usuário | MÉDIA | 
+|RF-008| Permitir o usuário editar os dados de um Acervo Pessoal| MÉDIA |
+|RF-009| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
 
 
 ### Requisitos não funcionais
