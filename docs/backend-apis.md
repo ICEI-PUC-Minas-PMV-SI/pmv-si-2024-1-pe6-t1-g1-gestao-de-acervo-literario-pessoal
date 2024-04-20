@@ -42,11 +42,11 @@ A arquitetura das APIs do Bibliotech segue um padrão RESTful, onde cada recurso
 |RF-002| Permitir o cadastro e edição de novo Acervo Pessoal  | ALTA |
 |RF-003| Permitir o usuário catalogar os livros que já leu | ALTA |
 |RF-004| Possibilitar que o usuário registre os livros que está atualmente lendo | ALTA |
-|RF-007| Controle para backup de dados do sistema - Exportar Dados | ALTA |
-|RF-010| Edição dos dados e status dos livros cadastrados | MÉDIA |
-|RF-011| Editar dados da conta de usuário | MÉDIA | 
-|RF-012| Permitir o usuário realizar o cadastro de mais de um Acervo Pessoal | MÉDIA |
-|RF-013| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
+|RF-005| Permitir o usuário exportar sua coleção no acervo pessoal em arquivo csv | MÉDIA |
+|RF-006| Edição dos dados e status dos livros cadastrados | MÉDIA |
+|RF-007| Editar dados da conta de usuário | MÉDIA | 
+|RF-008| Permitir o usuário realizar o cadastro de mais de um Acervo Pessoal | MÉDIA |
+|RF-009| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
 
 ## Requisitos Não Funcionais
 
