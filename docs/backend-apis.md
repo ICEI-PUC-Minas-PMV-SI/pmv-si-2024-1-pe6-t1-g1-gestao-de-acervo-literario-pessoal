@@ -9,9 +9,6 @@ O projeto Bibliotech é uma plataforma de gestão de biblioteca pessoal que visa
 * Facilitar a integração de novos recursos e funcionalidades na plataforma Bibliotech.
 * Garantir a segurança dos dados dos usuários por meio de autenticação e autorização adequadas.
 
-<img src="02-bpmn-proc1.png" alt="Modelagem">
-
-
 
 ## Arquitetura
 
