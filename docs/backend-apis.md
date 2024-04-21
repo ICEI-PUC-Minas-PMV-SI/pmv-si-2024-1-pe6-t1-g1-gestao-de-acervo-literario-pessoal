@@ -21,18 +21,34 @@ A arquitetura das APIs do Bibliotech segue um padrão RESTful, onde cada recurso
 
 ## Modelagem da Aplicação
 
-// A modelagem da aplicação inclui as seguintes entidades principais:
-// Usuário: Representa um usuário registrado na plataforma Bibliotech.
-// Livro: Representa um livro dentro da biblioteca pessoal de um usuário.
-// Acervo Pessoal: Representa uma coleção de livros organizada por um usuário.
-// Backup: Representa uma cópia de segurança dos dados da aplicação.
+Na presente aplicação temos como entidades principais:
+- Usuário: Representa um usuário registrado na plataforma Bibliotech.
+- Livro: Representa um livro dentro da biblioteca pessoal de um usuário.
+- Acervo Pessoal: Representa uma coleção de livros organizada por um usuário.
 
 ![Diagrama de Modelagem](img/Bibliotech.jpg)
 
 ## Fluxo de Dados
 
-// O fluxo de dados na aplicação começa com uma requisição HTTP feita por um cliente externo ou interno, que é roteada para o endpoint correspondente na API. O controlador então chama o serviço apropriado para processar a requisição, que pode envolver acesso ao banco de dados para recuperar ou modificar informações. Uma resposta é então enviada de volta ao cliente, contendo os dados solicitados ou confirmando o sucesso da operação.
+O fluxo de dados na aplicação Bibliotech é um processo que garante a comunicação eficiente entre os usuários e a API, manipulando as requisições HTTP de forma segura e eficaz. Este fluxo é essencial para garantir que os usuários possam interagir com a plataforma de maneira intuitiva e sem problemas, garantindo uma experiência positiva.
 
+### Início do Fluxo:
+O fluxo de dados inicia-se quando um usuário interno ou externo realiza uma requisição HTTP para a API da Bibliotech. Essa requisição pode ser feita para qualquer um dos endpoints disponíveis, dependendo da ação desejada pelo usuário, como autenticação, manipulação de usuários, livros ou coleções.
+
+### Roteamento da Requisição:
+Após a recepção da requisição HTTP, o controlador correspondente dentro da API é responsável por rotear a requisição para o serviço adequado com base no endpoint solicitado. O controlador interpreta os dados da requisição e determina qual serviço deve ser acionado para processar a solicitação.
+
+### Processamento da Requisição:
+Uma vez roteada para o serviço apropriado, a requisição é processada de acordo com a operação solicitada pelo usuário, faz uma consulta no banco de dados da AWS para recuperar informações, atualizações de dados existentes, criação de novos registros ou qualquer outra operação CRUD relevante para a entidade em questão.
+
+### Interação com o Banco de Dados:
+Durante o processamento da requisição, o serviço interege com o banco de dados criado na aws para recuperar ou modificar informações, de forma segura e otimizada para garantir a integridade dos dados.
+
+### Geração da Resposta:
+Após o processamento da requisição e qualquer interação necessária com o banco de dados, uma resposta é gerada pelo serviço. Esta resposta contém os dados solicitados pelo cliente ou uma confirmação do sucesso da operação, dependendo do tipo de requisição realizada.
+
+### Envio da Resposta ao Cliente:
+Finalmente, a resposta é enviada de volta ao usuário que fez a requisição original. A resposta contém os dados solicitados e/ou uma mensagem indicando o resultado da operação realizada. Isso completa o ciclo de comunicação entre o usuáirio e a API.
 
 ## Requisitos Funcionais
 
@@ -491,83 +507,6 @@ Erro 500
   }
 }
 
-
-  ### EXPORT
-- Método: GET
-- URL: /export
-- Parâmetros:
-  - username: string
-    
-- Resposta:
-  - Sucesso (200 OK)
-   
-    {
-      "message": "Coleção criada com sucesso.",
-      "data": {
-        media: appplication/csv file
-      }
-    }
-   
-  - Erro (400)
-   
-    {
-      "message": "Requisição inválida. Verifique os parâmetros enviados.",
-      "error": {
-        ...
-      }
-    }
-   
-  - Erro (500)
-   
-    {
-      "message": "Erro interno do servidor. Tente novamente mais tarde.",
-      "error": {
-        ...
-      }
-    }
-  
-
-### ISBN Search
-- Método: GET
-- URL: /isbn
-- Parâmetros:
-  - isbn: string
-
-- Resposta:
-  - Sucesso (200 OK)
-  
-    {
-      "message": "Dados do livro retornados com sucesso.",
-      "data": {
-      - title: string
-      - authors: array
-      - punlishedDate: date
-      - description: string
-      - edition: string
-      - isbn: string
-      - pageCount: integer
-      - categories: array
-      }
-    }
-  
-  - Erro (400)
-    
-    {
-      "message": "Requisição inválida. Verifique os parâmetros enviados.",
-      "error": {
-        ...
-      }
-    }
-
-  - Erro (500)
-   
-    {
-      "message": "Erro interno do servidor. Tente novamente mais tarde.",
-      "error": {
-        ...
-      }
-    }
-
 ## Considerações de Segurança
 
 - Todos os endpoints são protegidos por autenticação via token de acesso, com exceção da criação de usuário no /users (POST).
@@ -598,13 +537,91 @@ Erro 500
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+### Estratégia de Teste
+A estratégia de teste para a Bibliotech API incluirá testes unitários para garantir que cada unidade de código funcione conforme o esperado. Cada módulo da API será testado individualmente para garantir sua corretude e robustez. A abordagem de teste priorizará a cobertura dos requisitos funcionais e não funcionais, bem como a validação de entradas e saídas de dados.
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+### Ferramentas Utilizadas
+- Jest: Framework de teste JavaScript para testes de unidade.
+- Supertest: Biblioteca de suporte para testes de API RESTful.
+- Mockingoose: Biblioteca para criação de mocks de banco de dados para testes.
+
+### Tipos de Teste
+- Testes Unitários: Para garantir que unidades individuais de código funcionem corretamente.
+- Testes de Integração: Para verificar a interação correta entre os componentes da API.
+ -Testes de Entrada e Saída de Dados: Para validar entradas e saídas de dados da API.
+
+### Casos de Teste
+1. Testes Unitários
+  a. Autenticação (Authentication)
+    Caso de Teste: Verificar se o token de acesso é gerado corretamente após a autenticação.
+    Passos:
+    Chamar o endpoint de autenticação com credenciais válidas.
+    Verificar se o token de acesso é retornado.
+    Resultado Esperado: O token de acesso é gerado com sucesso.
+    Caso de Teste: Verificar se um erro é retornado quando as credenciais de autenticação são inválidas.
+    Passos:
+    Chamar o endpoint de autenticação com credenciais inválidas.
+    Verificar se um erro é retornado.
+    Resultado Esperado: Um erro é retornado indicando credenciais inválidas.
+  b. Usuários (Users)
+    Caso de Teste: Verificar se um novo usuário é criado corretamente.
+    Passos:
+    Chamar o endpoint de criação de usuário com dados válidos.
+    Verificar se o usuário é criado no banco de dados.
+    Resultado Esperado: O usuário é criado com sucesso.
+    Caso de Teste: Verificar se um usuário é atualizado corretamente.
+    Passos:
+    Chamar o endpoint de atualização de usuário com dados válidos.
+    Verificar se os dados do usuário são atualizados no banco de dados.
+    Resultado Esperado: Os dados do usuário são atualizados com sucesso.
+   c. Livros (Books)
+    Caso de Teste: Verificar se um novo livro é registrado corretamente.
+    Passos:
+    Chamar o endpoint de criação de livro com dados válidos.
+    Verificar se o livro é registrado no banco de dados.
+    Resultado Esperado: O livro é registrado com sucesso.
+    Caso de Teste: Verificar se um livro é atualizado corretamente.
+    Passos:
+    Chamar o endpoint de atualização de livro com dados válidos.
+    Verificar se os dados do livro são atualizados no banco de dados.
+    Resultado Esperado: Os dados do livro são atualizados com sucesso.
+  d. Coleções (Collections)
+    Caso de Teste: Verificar se uma nova coleção é criada corretamente.
+    Passos:
+    Chamar o endpoint de criação de coleção com dados válidos.
+    Verificar se a coleção é criada no banco de dados.
+    Resultado Esperado: A coleção é criada com sucesso.
+    Caso de Teste: Verificar se uma coleção é atualizada corretamente.
+    Passos:
+    Chamar o endpoint de atualização de coleção com dados válidos.
+    Verificar se os dados da coleção são atualizados no banco de dados.
+    Resultado Esperado: Os dados da coleção são atualizados com sucesso.
+
+2. Testes de Integração
+  Caso de Teste: Verificar a integração entre o endpoint de autenticação e os endpoints protegidos por autenticação.
+    Passos:
+    Autenticar-se utilizando o endpoint de autenticação.
+    Tentar acessar um endpoint protegido por autenticação utilizando o token gerado.
+    Resultado Esperado: O acesso é permitido com sucesso.
+  Caso de Teste: Verificar a integração entre os diferentes endpoints para garantir o fluxo correto de dados.
+    Passos:
+    Executar um fluxo completo de operações, como criar um usuário, adicionar livros ao acervo, etc.
+    Verificar se os dados são consistentes em todos os endpoints relacionados.
+    Resultado Esperado: O fluxo de dados ocorre conforme o esperado, sem inconsistências.
+
+3. Testes de Carga
+  Caso de Teste: Avaliar o desempenho da API sob carga significativa.
+    Passos:
+    Simular múltiplas requisições concorrentes para diferentes endpoints da API.
+    Medir o tempo de resposta e a estabilidade do sistema sob carga.
+    Resultado Esperado: A API mantém um tempo de resposta aceitável e não apresenta falhas sob carga.
+
+4. Testes de Entrada e Saída de Dados
+  Caso de Teste: Validar entradas de dados para evitar ataques de injeção de código.
+    Passos:
+    Enviar dados maliciosos para os endpoints da API.
+    Verificar se as entradas de dados são devidamente validadas e tratadas.
+    Resultado Esperado: A API rejeita entradas maliciosas e impede ataques de injeção de código.
 
 | Caso de Teste ID   | Modulo   | Ação Específica do Teste  | Resultado Esperado | Resultado Atual |  
 |-----------------|-----------------|-----------------|-----------------|-----------------|
@@ -621,10 +638,10 @@ Erro 500
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
-
+https://nodejs.org/en
 https://expressjs.com/pt-br/
-https://www.prisma.io/docs/orm
-https://www.passportjs.org/docs/
+https://aws.amazon.com/
 https://swagger.io/specification/
 https://developer.mozilla.org/en-US/docs/Web/HTTP
+https://web.postman.co/home
+https://jestjs.io/pt-BR/
