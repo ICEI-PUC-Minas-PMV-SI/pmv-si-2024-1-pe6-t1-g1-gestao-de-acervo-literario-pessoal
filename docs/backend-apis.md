@@ -4,7 +4,7 @@ O projeto Bibliotech é uma plataforma de gestão de biblioteca pessoal que visa
 
 ## Objetivos da API
 
-*Permitir que aplicativos externos acessem e interajam com os dados do sistema Bibliotech de forma segura e eficiente.
+* Permitir que aplicativos externos acessem e interajam com os dados do sistema Bibliotech de forma segura e eficiente.
 * Fornecer operações CRUD (Create, Read, Update, Delete) para entidades principais, como usuários, livros e acervos pessoais.
 * Facilitar a integração de novos recursos e funcionalidades na plataforma Bibliotech.
 * Garantir a segurança dos dados dos usuários por meio de autenticação e autorização adequadas.
