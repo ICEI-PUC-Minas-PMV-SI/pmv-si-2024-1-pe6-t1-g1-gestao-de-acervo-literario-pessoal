@@ -145,23 +145,6 @@ Exibe um formulário para editar os dados de uma conta na plataforma.
 Inclui campos para inserir informações como nome, sobrenome, email e senha.
 
 
-#### Interações do Usuário:
-
-- Adição de Livro:
-  
-O usuário pode adicionar um novo livro à sua biblioteca pessoal preenchendo um formulário com as informações do livro.
-
-
-- Organização da Biblioteca:
-  
-O usuário pode organizar sua biblioteca pessoal movendo livros entre diferentes seções para organizar seus livros de acordo com interesses e preferências específicos.
-
-
-- Acompanhamento de Leituras:
-  
-O usuário pode marcar os livros que está atualmente lendo, atualizando o progresso de leitura, como "Lendo Agora", "Lidos" e "Quero Ler". 
-
-
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
 
@@ -198,8 +181,84 @@ Os layouts serão projetados para se adaptar de maneira intuitiva, reorganizando
 
 
 ### Interações do Usuário
-[Descreva as interações do usuário na interface, como animações, transições entre páginas e outras interações.]
 
+#### Página de Adição de Livro:
+- O usuário acessa a página de adição de livro.
+- Clica em entrar ou criar conta
+- Será redirecionado para página escolhida
+
+#### Página de Adição de Livro:
+- O usuário acessa a página de adição de livro.
+- Preenche o formulário com as informações do novo livro, como título, autor, editora, etc.
+- Ao submeter o formulário, o livro é adicionado à biblioteca pessoal do usuário.
+
+#### Página Inicial:
+- Na página inicial, o usuário visualiza sua biblioteca pessoal.
+- O usuário pode clicar em um livro para acessar os detalhes do mesmo.
+- O usuário pode clicar em um botão para acessar a página de adição de livro e adicionar um novo livro à sua biblioteca.
+
+### Página de Detalhes do Livro:
+
+- Ao acessar os detalhes de um livro, o usuário pode ver todas as informações sobre o livro, como título, autor, editora, etc.
+
+- O usuário pode clicar em um botão para editar as informações do livro e acessar a página de edição de livro.
+
+#### Página de Edição de Livro:
+
+- O usuário acessa a página de edição de livro clicando em um botão na página de detalhes do livro.
+
+- A página exibe um formulário preenchido com as informações atuais do livro.
+
+- O usuário pode fazer as alterações desejadas e submeter o formulário para salvar as mudanças.
+
+#### Página de Login:
+
+- O usuário acessa a página de login.
+
+- Preenche os campos de e-mail e senha.
+
+- Ao submeter o formulário, o usuário é autenticado e redirecionado para a página inicial da aplicação.
+
+#### Página de Criação de Usuário:
+
+- O usuário acessa a página de criação de usuário.
+
+- Preenche os campos com suas informações pessoais, como nome, sobrenome, e-mail e senha.
+
+- Ao submeter o formulário, o usuário é cadastrado na plataforma e redirecionado para a página inicial da aplicação.
+
+#### Página de Configurações do Usuário:
+
+- O usuário acessa a página de configurações do usuário.
+
+- Preenche os campos com suas informações pessoais, como nome, sobrenome, e-mail e senha.
+
+- Ao submeter o formulário, as alterações são salvas.
+
+#### Página de Coleções:
+
+- O usuário acessa a página de coleções.
+
+- Visualiza suas coleções pessoais e os livros nelas contidos.
+
+- Pode criar novas coleções e organizar seus livros de acordo com seus interesses e preferências específicos.
+
+#### Página de Detalhes das Coleções:
+
+- O usuário acessa a página de detalhes de uma coleção clicando em uma coleção na página de coleções.
+
+- Visualiza os livros contidos na coleção e suas informações.
+
+Pode interagir com os livros, ver detalhes e editar os dados caso desejável.
+
+#### Página de Leituras:
+
+- O usuário acessa a página de leituras.
+
+- Visualiza sua biblioteca pessoal organizada em diferentes seções, como "Lendo Agora", "Lidos" e "Quero Ler".
+
+- Interage com os livros da mesma forma que na página inicial
+  
 ## Fluxo de Dados
 
 [Diagrama ou descrição do fluxo de dados na aplicação.]
