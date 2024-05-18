@@ -184,7 +184,7 @@ Além das cores, tipografia e ícones, outros elementos gráficos podem incluir:
 
 - Botões: Botões com bordas arredondadas e efeitos de hover suaves para indicar interatividade.
 - Barra de Navegação: Uma barra de navegação simples e intuitiva.
-- Cards de Livros: Elementos gráficos que exibem informações sobre os livros na biblioteca do usuário, com uma imagem da capa do livro, título, autor e possivelmente outras informações como status de leitura, avaliação, etc.
+- Cards de Livros: Elementos gráficos que exibem informações sobre os livros na biblioteca do usuário, com uma imagem da capa do livro, título, autor e outras informações como status de leitura, etc.
 ### Layout Responsivo
 [Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
 
