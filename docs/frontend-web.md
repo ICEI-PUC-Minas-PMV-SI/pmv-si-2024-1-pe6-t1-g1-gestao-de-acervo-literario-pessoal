@@ -185,8 +185,17 @@ Além das cores, tipografia e ícones, outros elementos gráficos podem incluir:
 - Botões: Botões com bordas arredondadas e efeitos de hover suaves para indicar interatividade.
 - Barra de Navegação: Uma barra de navegação simples e intuitiva.
 - Cards de Livros: Elementos gráficos que exibem informações sobre os livros na biblioteca do usuário, com uma imagem da capa do livro, título, autor e outras informações como status de leitura, etc.
+  
 ### Layout Responsivo
-[Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
+
+- Media Queries:
+Serão utilizadas media queries para aplicar estilos específicos dependendo do tamanho da tela do dispositivo.
+Essas media queries serão definidas para ajustar o layout, o tamanho dos elementos e a disposição dos componentes conforme necessário para proporcionar uma experiência de usuário otimizada.
+
+- Grid Layouts:
+Serão utilizados sistemas de grid flexíveis para organizar os elementos da página de forma eficiente em diferentes tamanhos de tela.
+Os layouts serão projetados para se adaptar de maneira intuitiva, reorganizando os componentes conforme o espaço disponível na tela, mantendo a usabilidade e a legibilidade.
+
 
 ### Interações do Usuário
 [Descreva as interações do usuário na interface, como animações, transições entre páginas e outras interações.]
