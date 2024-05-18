@@ -1,16 +1,51 @@
 # Front-end Web
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+1. Introdução
+  O projeto Bibliotech é uma plataforma de gestão de biblioteca pessoal projetada para ajudar os usuários a organizar, catalogar e acompanhar suas leituras de forma eficiente. Através de uma interface intuitiva e amigável, os usuários podem registrar os livros que estão lendo, os livros que já leram e os livros que desejam ler no futuro. Além disso, a plataforma permite a criação de coleções personalizadas, oferecendo uma experiência personalizada para cada usuário.
+
+2. Objetivos
+   
+Os principais objetivos do projeto Bibliotech são:
+
+- Facilitar a organização e o gerenciamento da biblioteca pessoal dos usuários.
+- Oferecer uma interface intuitiva e amigável para facilitar a interação dos usuários com a plataforma.
+- Permitir que os usuários registrem os livros que estão lendo, já leram e desejam ler no futuro.
+- Possibilitar a criação de coleções personalizadas de acordo com os interesses e preferências de cada usuário.
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+O projeto Bibliotech foi desenvolvido utilizando uma arquitetura de aplicativo web, com as seguintes tecnologias principais:
+
+Frontend: Angular, tailwind e flowbite para a construção da interface do usuário.
 
 ## Arquitetura
 
-[Descrição da arquitetura das aplicação web, incluindo os componentes e suas interações.]
+- Interface do Usuário (UI):
+
+Responsável pela apresentação dos elementos visuais da aplicação.
+Inclui páginas, componentes de formulário, botões, barras de navegação, etc.
+
+- Estado Global (Global State):
+
+Gerenciado com Redux.
+Armazena o estado global da aplicação, como informações do usuário, livros da biblioteca, etc.
+Permite o compartilhamento de estado entre diferentes componentes.
+
+-Serviços de API:
+
+Módulos responsáveis por realizar chamadas à API do backend para recuperar ou enviar dados.
+Abstrai a lógica de comunicação com o backend, como autenticação, manipulação de dados, etc.
+
+- Interações:
+A interface do usuário renderiza os componentes com base no estado global.
+Quando o usuário interage com a interface (por exemplo, adicionando um livro à biblioteca), os serviços de API são chamados para atualizar os dados no backend.
+As respostas da API são processadas e o estado global é atualizado, refletindo as alterações na interface do usuário.
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+Na presente aplicação temos como entidades principais:
+
+Usuário: Representa um usuário registrado na plataforma Bibliotech.
+Livro: Representa um livro dentro da biblioteca pessoal de um usuário.
+Acervo Pessoal: Representa uma coleção de livros organizada por um usuário.
 
 ## Projeto da Interface Web
 [Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
