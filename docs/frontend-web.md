@@ -60,11 +60,15 @@ O design visual do Bibliotech é limpo, moderno e focado na usabilidade. Utiliza
 
 Exibe a logo da bibliotech e botões de acesso
 
+
+
 -  Página de login:
   
 Exibe um formulário para realizar login na plataforma.
 
 Inclui campos para inserir informações como nome, sobrenome, email e senha.
+
+
 
 - Página de criação de usuário:
 
@@ -72,13 +76,17 @@ Exibe um formulário para criar uma conta na plataforma.
 
 Inclui campos para inserir informações como nome, sobrenome, email e senha.
 
+
+
 - Página Inicial:
-- 
+  
 Apresenta uma visão geral da biblioteca pessoal do usuário.
 
 Mostra os livros atualmente sendo lidos, os livros já lidos e os livros que o usuário deseja ler no futuro.
 
 Oferece acesso a funcionalidade de adicionar um novo livro.
+
+
 
 - Página de Adição de Livro:
   
@@ -86,11 +94,15 @@ Exibe um formulário para adicionar um novo livro à biblioteca pessoal do usuá
 
 Inclui campos para inserir informações como título, autor, editora, ano de publicação, capa do livro, etc.
 
+
+
 - Página de Detalhes do Livro:
   
 Apresenta todos os dados do livro cadastrado.
 
 Oferece acesso a funcionalidade de editar um novo livro.
+
+
 
 - Página de Edição de Livro:
   
@@ -98,9 +110,13 @@ Exibe um formulário para editar um livro da biblioteca pessoal do usuário.
 
 Inclui campos para inserir informações como título, autor, editora, ano de publicação, capa do livro, etc.
 
+
+
 - Página de Coleções:
   
 Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções.
+
+
 
 - Página de Detalhes das Coleções:
   
@@ -110,6 +126,8 @@ Cada livro é exibido com sua capa, título, autor e outras informações releva
 
 Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
 
+
+
 - Página de Leituras:
    
 Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções, como "Lendo Agora", "Lidos" e "Quero Ler".
@@ -117,6 +135,8 @@ Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções, c
 Cada livro é exibido com sua capa, título, autor e outras informações relevantes.
 
 Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
+
+
 
 - Página de Configurações do Usuário:
   
@@ -131,9 +151,11 @@ Inclui campos para inserir informações como nome, sobrenome, email e senha.
   
 O usuário pode adicionar um novo livro à sua biblioteca pessoal preenchendo um formulário com as informações do livro.
 
+
 - Organização da Biblioteca:
   
 O usuário pode organizar sua biblioteca pessoal movendo livros entre diferentes seções para organizar seus livros de acordo com interesses e preferências específicos.
+
 
 - Acompanhamento de Leituras:
   
