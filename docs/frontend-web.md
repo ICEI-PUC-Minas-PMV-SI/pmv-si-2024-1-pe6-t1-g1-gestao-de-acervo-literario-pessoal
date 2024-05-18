@@ -56,99 +56,91 @@ O design visual do Bibliotech é limpo, moderno e focado na usabilidade. Utiliza
 
 #### Layout das Páginas:
 
-- Landing page:
+##### Landing page:
 
-Exibe a logo da bibliotech e botões de acesso
+- Exibe a logo da bibliotech e botões de acesso
 
 
-
--  Página de login:
+##### Página de login:
   
-Exibe um formulário para realizar login na plataforma.
+- Exibe um formulário para realizar login na plataforma.
 
-Inclui campos para inserir informações como nome, sobrenome, email e senha.
-
-
-
-- Página de criação de usuário:
-
-Exibe um formulário para criar uma conta na plataforma.
-
-Inclui campos para inserir informações como nome, sobrenome, email e senha.
+- Inclui campos para inserir informações como nome, sobrenome, email e senha.
 
 
+##### Página de criação de usuário:
 
-- Página Inicial:
+- Exibe um formulário para criar uma conta na plataforma.
+
+- Inclui campos para inserir informações como nome, sobrenome, email e senha.
+
+
+
+##### Página Inicial:
   
-Apresenta uma visão geral da biblioteca pessoal do usuário.
+- Apresenta uma visão geral da biblioteca pessoal do usuário.
 
-Mostra os livros atualmente sendo lidos, os livros já lidos e os livros que o usuário deseja ler no futuro.
+- Mostra os livros atualmente sendo lidos, os livros já lidos e os livros que o usuário deseja ler no futuro.
 
-Oferece acesso a funcionalidade de adicionar um novo livro.
+- Oferece acesso a funcionalidade de adicionar um novo livro.
 
 
-
-- Página de Adição de Livro:
+##### Página de Adição de Livro:
   
-Exibe um formulário para adicionar um novo livro à biblioteca pessoal do usuário.
+- Exibe um formulário para adicionar um novo livro à biblioteca pessoal do usuário.
 
-Inclui campos para inserir informações como título, autor, editora, ano de publicação, capa do livro, etc.
+- Inclui campos para inserir informações como título, autor, editora, ano de publicação, capa do livro, etc.
 
 
-
-- Página de Detalhes do Livro:
+##### Página de Detalhes do Livro:
   
-Apresenta todos os dados do livro cadastrado.
+- Apresenta todos os dados do livro cadastrado.
 
-Oferece acesso a funcionalidade de editar um novo livro.
+- Oferece acesso a funcionalidade de editar um novo livro.
 
 
-
-- Página de Edição de Livro:
+##### Página de Edição de Livro:
   
-Exibe um formulário para editar um livro da biblioteca pessoal do usuário.
+- Exibe um formulário para editar um livro da biblioteca pessoal do usuário.
 
-Inclui campos para inserir informações como título, autor, editora, ano de publicação, capa do livro, etc.
+- Inclui campos para inserir informações como título, autor, editora, ano de publicação, capa do livro, etc.
 
 
-
-- Página de Coleções:
+##### Página de Coleções:
   
-Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções.
+- Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções.
 
 
-
-- Página de Detalhes das Coleções:
+##### Página de Detalhes das Coleções:
   
-Apresenta os livros cadastrados da coleção selecionada.
+- Apresenta os livros cadastrados da coleção selecionada.
 
-Cada livro é exibido com sua capa, título, autor e outras informações relevantes.
+- Cada livro é exibido com sua capa, título, autor e outras informações relevantes.
 
-Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
+- Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
 
 
-
-- Página de Leituras:
+##### Página de Leituras:
    
-Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções, como "Lendo Agora", "Lidos" e "Quero Ler".
+- Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções, como "Lendo Agora", "Lidos" e "Quero Ler".
 
-Cada livro é exibido com sua capa, título, autor e outras informações relevantes.
+- Cada livro é exibido com sua capa, título, autor e outras informações relevantes.
 
-Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
+- Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
 
 
-
-- Página de Configurações do Usuário:
+##### Página de Configurações do Usuário:
   
-Exibe um formulário para editar os dados de uma conta na plataforma.
+- Exibe um formulário para editar os dados de uma conta na plataforma.
 
-Inclui campos para inserir informações como nome, sobrenome, email e senha.
+- Inclui campos para inserir informações como nome, sobrenome, email e senha.
 
 
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
 
 ### Design Visual
+
 ##### Paleta de Cores:
 A paleta de cores segue uma abordagem suave e moderna, com tons que transmitem uma sensação de calma e sofisticação. A paleta de cores inclui:
 
@@ -261,7 +253,38 @@ Pode interagir com os livros, ver detalhes e editar os dados caso desejável.
   
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+#### Entrada de Dados do Usuário:
+
+- O usuário interage com a interface da aplicação Bibliotech, fornecendo informações por meio de formulários, cliques em botões e outras ações de entrada.
+
+#### Processamento de Dados na Interface:
+
+- Os dados fornecidos pelo usuário são capturados pela interface da aplicação e preparados para serem enviados ao servidor para processamento adicional.
+
+#### Envio de Dados para o Servidor:
+
+- Os dados capturados pela interface são enviados para o servidor da aplicação por meio de requisições HTTP, utilizando métodos como POST ou PUT, dependendo da ação realizada pelo usuário (por exemplo, adicionar um novo livro, editar informações de um livro, etc.).
+Validação e Processamento no Servidor:
+
+- No servidor, os dados recebidos são validados para garantir sua integridade e conformidade com as regras de negócio da aplicação.
+Após a validação, os dados são processados conforme necessário, executando operações como adicionar, atualizar ou excluir registros no banco de dados.
+
+#### Acesso ao Banco de Dados:
+
+- Para armazenamento e recuperação de dados, a aplicação Bibliotech utiliza MySQL. As operações de acesso ao banco de dados são realizadas por meio de consultas SQL.
+
+#### Manipulação de Dados no Banco de Dados:
+
+- As consultas e comandos enviados ao banco de dados são executados para armazenar ou recuperar informações relacionadas aos livros, usuários e outras entidades da aplicação.
+
+#### Retorno de Dados ao Cliente:
+
+- Após o processamento no servidor e a manipulação dos dados no banco de dados, os resultados são retornados ao cliente por meio de respostas HTTP.
+- As respostas podem incluir dados atualizados, mensagens de confirmação, erros de validação ou outras informações relevantes para o usuário.
+
+#### Atualização da Interface do Usuário:
+
+Com base nas respostas recebidas do servidor, a interface do usuário é atualizada dinamicamente para refletir as alterações realizadas.
 
 ## Requisitos Funcionais
 
