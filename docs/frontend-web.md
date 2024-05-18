@@ -31,7 +31,7 @@ Gerenciado com Redux.
 Armazena o estado global da aplicação, como informações do usuário, livros da biblioteca, etc.
 Permite o compartilhamento de estado entre diferentes componentes.
 
--Serviços de API:
+- Serviços de API:
 
 Módulos responsáveis por realizar chamadas à API do backend para recuperar ou enviar dados.
 Abstrai a lógica de comunicação com o backend, como autenticação, manipulação de dados, etc.
@@ -54,7 +54,7 @@ Acervo Pessoal: Representa uma coleção de livros organizada por um usuário.
 
 O design visual do Bibliotech é limpo, moderno e focado na usabilidade. Utiliza uma paleta de cores suaves e agradáveis ​​para criar uma experiência visual atraente para os usuários. Os elementos da interface são bem espaçados e organizados para facilitar a navegação e a compreensão das informações.
 
-####Layout das Páginas:
+###Layout das Páginas:
 
 1. Landing page:
 Exibe a logo da bibliotech e botões de acesso
@@ -107,7 +107,7 @@ Exibe um formulário para editar os dados de uma conta na plataforma.
 Inclui campos para inserir informações como nome, sobrenome, email e senha.
 
 
-####Interações do Usuário:
+###Interações do Usuário:
 
 1. Adição de Livro:
 O usuário pode adicionar um novo livro à sua biblioteca pessoal preenchendo um formulário com as informações do livro.
