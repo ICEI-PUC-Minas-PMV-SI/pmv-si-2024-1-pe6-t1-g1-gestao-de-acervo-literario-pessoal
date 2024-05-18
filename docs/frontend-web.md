@@ -166,8 +166,25 @@ O usuário pode marcar os livros que está atualmente lendo, atualizando o progr
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
 
 ### Design Visual
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+##### Paleta de Cores:
+A paleta de cores segue uma abordagem suave e moderna, com tons que transmitem uma sensação de calma e sofisticação. A paleta de cores inclui:
 
+Primary:
+Varia de tons de lilás e roxo, indo de um tom mais claro e suave (#f5f3ff) até um tom mais profundo e vibrante (#2e1065).
+
+##### Tipografia:
+A tipografia escolhida é a "Segoe UI", uma fonte moderna e legível, que oferece uma experiência de leitura confortável tanto em dispositivos móveis quanto em desktops. Ela transmite uma sensação de limpeza e clareza ao texto da interface.
+
+##### Ícones:
+Os ícones utilizados na interface são preferencialmente simplificados e consistentes, seguindo um estilo moderno e minimalista. Ícones vetoriais são preferidos para garantir escalabilidade e nitidez em diferentes tamanhos de tela.
+
+##### Outros Elementos Gráficos:
+
+Além das cores, tipografia e ícones, outros elementos gráficos podem incluir:
+
+- Botões: Botões com bordas arredondadas e efeitos de hover suaves para indicar interatividade.
+- Barra de Navegação: Uma barra de navegação simples e intuitiva.
+- Cards de Livros: Elementos gráficos que exibem informações sobre os livros na biblioteca do usuário, com uma imagem da capa do livro, título, autor e possivelmente outras informações como status de leitura, avaliação, etc.
 ### Layout Responsivo
 [Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
 
