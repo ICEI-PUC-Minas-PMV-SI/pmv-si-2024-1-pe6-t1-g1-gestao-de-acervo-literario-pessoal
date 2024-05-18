@@ -297,7 +297,12 @@ Com base nas respostas recebidas do servidor, a interface do usuário é atualiz
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+Todos os endpoints são protegidos por autenticação via token de acesso, com exceção da criação de usuário no /users (POST).
+Todos os endpoints fazem uso de HTTPS, para criptografar os dados em trânsito e proteger contra ataques de interceptação.
+Os endpoints estão sujeitos à taxa limite de uso para evitar ataques e garantir uma utilização justa dos recursos do servidor.
+Todas as entradas de dados recebidas pela API devem ser validadas para evitar ataques de injeção de código, como SQL injection e XSS (Cross-Site Scripting).
+A API está sujeito a versionamento, com atualizações e correções de segurança para mitigar vulnerabilidades conhecidas.
+As bibliotecas de terceiros utilizadas devem ser mantidas devidamente atualizadas para evitar vulnerabilidades conhecidas.
 
 ## Implantação
 
