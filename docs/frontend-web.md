@@ -1,10 +1,10 @@
 # Front-end Web
 
-1. Introdução
+###Introdução
    
   O projeto Bibliotech é uma plataforma de gestão de biblioteca pessoal projetada para ajudar os usuários a organizar, catalogar e acompanhar suas leituras de forma eficiente. Através de uma interface intuitiva e amigável, os usuários podem registrar os livros que estão lendo, os livros que já leram e os livros que desejam ler no futuro. Além disso, a plataforma permite a criação de coleções personalizadas, oferecendo uma experiência personalizada para cada usuário.
 
-3. Objetivos
+###Objetivos
    
 Os principais objetivos do projeto Bibliotech são:
 
