@@ -51,7 +51,73 @@ Acervo Pessoal: Representa uma coleção de livros organizada por um usuário.
 ![Diagrama de Modelagem](img/Bibliotech.jpg)
 
 ## Projeto da Interface Web
-[Descreva o projeto da interface Web da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+
+O design visual do Bibliotech é limpo, moderno e focado na usabilidade. Utiliza uma paleta de cores suaves e agradáveis ​​para criar uma experiência visual atraente para os usuários. Os elementos da interface são bem espaçados e organizados para facilitar a navegação e a compreensão das informações.
+
+####Layout das Páginas:
+
+1. Landing page:
+Exibe a logo da bibliotech e botões de acesso
+
+2. Página de login:
+Exibe um formulário para realizar login na plataforma.
+Inclui campos para inserir informações como nome, sobrenome, email e senha.
+
+3. Página de criação de usuário:
+
+Exibe um formulário para criar uma conta na plataforma.
+Inclui campos para inserir informações como nome, sobrenome, email e senha.
+
+4. Página Inicial:
+Apresenta uma visão geral da biblioteca pessoal do usuário.
+Mostra os livros atualmente sendo lidos, os livros já lidos e os livros que o usuário deseja ler no futuro.
+
+Oferece acesso a funcionalidade de adicionar um novo livro.
+
+5. Página de Adição de Livro:
+Exibe um formulário para adicionar um novo livro à biblioteca pessoal do usuário.
+Inclui campos para inserir informações como título, autor, editora, ano de publicação, capa do livro, etc.
+
+6. Página de Detalhes do Livro:
+Apresenta todos os dados do livro cadastrado.
+
+Oferece acesso a funcionalidade de editar um novo livro.
+
+7. Página de Edição de Livro:
+Exibe um formulário para editar um livro da biblioteca pessoal do usuário.
+Inclui campos para inserir informações como título, autor, editora, ano de publicação, capa do livro, etc.
+
+8. Página de Coleções:
+Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções.
+
+9. Página de Detalhes das Coleções:
+Apresenta os livros cadastrados da coleção selecionada.
+
+Cada livro é exibido com sua capa, título, autor e outras informações relevantes.
+Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
+
+10. Página de Leituras:
+   
+Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções, como "Lendo Agora", "Lidos" e "Quero Ler".
+Cada livro é exibido com sua capa, título, autor e outras informações relevantes.
+Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
+
+11. Página de Configurações do Usuário:
+Exibe um formulário para editar os dados de uma conta na plataforma.
+Inclui campos para inserir informações como nome, sobrenome, email e senha.
+
+
+####Interações do Usuário:
+
+1. Adição de Livro:
+O usuário pode adicionar um novo livro à sua biblioteca pessoal preenchendo um formulário com as informações do livro.
+
+2. Organização da Biblioteca:
+O usuário pode organizar sua biblioteca pessoal movendo livros entre diferentes seções para organizar seus livros de acordo com interesses e preferências específicos.
+
+3. Acompanhamento de Leituras:
+O usuário pode marcar os livros que está atualmente lendo, atualizando o progresso de leitura, como "Lendo Agora", "Lidos" e "Quero Ler". 
+
 
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
