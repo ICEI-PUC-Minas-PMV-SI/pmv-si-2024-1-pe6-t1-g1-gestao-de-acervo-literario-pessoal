@@ -286,6 +286,9 @@ Após a validação, os dados são processados conforme necessário, executando 
 
 Com base nas respostas recebidas do servidor, a interface do usuário é atualizada dinamicamente para refletir as alterações realizadas.
 
+## Requisitos Funcionais
+
+
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-001| Permitir o cadastro de novo usuário no site| ALTA |
@@ -305,6 +308,20 @@ Com base nas respostas recebidas do servidor, a interface do usuário é atualiz
 |RNF-001| A interface deve ser intuitiva e fácil de usar, adequada para usuários com pouca familiaridade com tecnologia | ALTA | 
 |RNF-002| Garantir a segurança dos dados pessoais e de leitura dos usuários | ALTA |
 |RNF-003| O sistema deve ser responsivo para rodar em um dispositivos móvel | BAIXA |
+
+
+## KPI's
+
+| Indicador de Desempenho        | Descrição                                                  | Meta    |
+|--------------------------------|------------------------------------------------------------|---------|
+| Taxa de Sucesso na Adição      | Percentual de livros adicionados com sucesso em relação ao total de tentativas de adição. | 95%     |
+| Tempo Médio de Adição           | Tempo médio necessário para adicionar um livro à biblioteca pessoal do usuário. | < 1 min |
+| Taxa de Rejeição de Formulários | Percentual de formulários de adição de livro rejeitados devido a dados inválidos ou incompletos. | < 5%    |
+| Eficiência do Processo         | Percentual de redução no tempo médio de adição de livro após a implementação de melhorias no processo. | 10%     |
+| Satisfação do Usuário          | Avaliação média da satisfação dos usuários com o processo de adição de livro, em uma escala de 1 a 5. | > 4     |
+
+
+
 
 
 ## Considerações de Segurança
