@@ -58,7 +58,7 @@ O design visual do Bibliotech é limpo, moderno e focado na usabilidade. Utiliza
 
 ##### Landing page:
 
-- Exibe a logo da bibliotech e botões de acesso
+- Exibe a logo da bibliotech e botões de acesso 
 
 
 ##### Página de login:
@@ -241,7 +241,7 @@ Os layouts serão projetados para se adaptar de maneira intuitiva, reorganizando
 
 - Visualiza os livros contidos na coleção e suas informações.
 
-Pode interagir com os livros, ver detalhes e editar os dados caso desejável.
+Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável, assim como também editar a coleção.
 
 #### Página de Leituras:
 
@@ -319,6 +319,169 @@ Com base nas respostas recebidas do servidor, a interface do usuário é atualiz
 | Taxa de Rejeição de Formulários | Percentual de formulários de adição de livro rejeitados devido a dados inválidos ou incompletos. | < 5%    |
 | Eficiência do Processo         | Percentual de redução no tempo médio de adição de livro após a implementação de melhorias no processo. | 10%     |
 | Satisfação do Usuário          | Avaliação média da satisfação dos usuários com o processo de adição de livro, em uma escala de 1 a 5. | > 4     |
+
+
+## Fluxograma
+
+### Landing Page
+
+```mermaid
+
+graph TD;
+    A[Usuário] -->|1. Acessa Landing Page| B[Página Inicial do Sistema];
+    B -->|2. Visualiza Logo e Botões| C{Escolha de Ação};
+    C -->|3a. Clique em 'Login'| D[Página de Login]
+    C -->|3b. Clique em 'Criar Conta'| E[Página de Criação de Usuário];
+
+```
+
+### Login
+
+```mermaid
+
+graph LR
+A[Início] --> B{Inserir Nome de Usuário}
+B --> C{Nome de Usuário Válido?}
+C -- Sim --> D{Inserir Senha}
+D --> E{Senha Válida?}
+E -- Sim --> F[Login efetuado com sucesso]
+E -- Não --> G{Senha Inválida}
+G --> H{Tentar Novamente}
+H -- Sim --> B
+H -- Não --> I[Fim]
+C -- Não --> J{Nome de Usuário Inválido}
+J --> K{Tentar Novamente}
+K -- Sim --> B
+K -- Não --> I
+
+```
+
+### Criação de Usuário 
+
+```mermaid
+graph TD;
+    A[Usuário] -->|1. Acessa Página de Criação de Usuário| B[Página de Criação de Usuário];
+    B -->|2. Visualiza Formulário| C{Preenche Informações};
+    C -->|3. Insere Nome, Sobrenome, Email e Senha| D[Envia Formulário];
+    D -->|4. Envia Dados para Validação| E{Dados Válidos?};
+    E -->|5a. Sim| F[Conta Criada com Sucesso];
+    E -->|5b. Não| G[Tentar novamente];
+```
+
+### Página Inicial
+
+```mermaid
+
+graph TD;
+    A[Usuário] -->|1. Acessa Página Inicial| B[Página Inicial do Sistema];
+    B -->|2. Visualiza Biblioteca Pessoal| C[Página de Biblioteca Pessoal];
+    C -->|3. Explora Livros| D{Escolha de Ação};
+    D -->|4a. Visualiza Todos os Livros| E[Página de Biblioteca Pessoal];
+    D -->|4b. Acessa Funcionalidade de Adicionar Novo Livro| F[Página de Adição de Livro];
+```
+
+
+### Página de Adição de Livro
+
+```mermaid
+
+graph TD;
+    A[Usuário] -->|1. Acessa Página de Adição de Livro| B[Página de Adição de Livro];
+    B -->|2. Visualiza Formulário| C{Preenche Informações};
+    C -->|3. Insere Título, Autor, Editora, Ano de Publicação, etc.| D[Envia Formulário];
+    D -->|4. Envia Dados para Validação| E{Dados Válidos?};
+    E -->|5a. Sim| F[Livro Adicionado com Sucesso];
+    E -->|5b. Não| G[Tentar novamente];
+
+```
+
+### Página de Detalhes do Livro
+
+```mermaid
+
+graph TD;
+    A[Usuário] -->|1. Acessa Página de Detalhes do Livro| B[Página de Detalhes do Livro];
+    B -->|2. Visualiza Dados do Livro| C[Página de Detalhes do Livro];
+    C -->|3. Explora Livro| D{Escolha de Ação};
+    D -->|4a. Acessa Funcionalidade de Edição| E[Página de Edição de Livro];
+
+```
+
+### Página de Edição do Livro
+
+```mermaid
+
+graph TD;
+    A[Usuário] -->|1. Acessa Página de Edição de Livro| B[Página de Edição de Livro];
+    B -->|2. Visualiza Formulário| C{Preenche Informações};
+    C -->|3. Insere Título, Autor, Editora, Ano de Publicação, Capa do Livro, etc.| D[Envia Formulário];
+    D -->|4. Envia Dados para Validação| E{Dados Válidos?};
+    E -->|5a. Sim| F[Livro Editado com Sucesso];
+    E -->|5b. Não| G[Tentar novamente];
+
+```
+
+### Página de Coleções
+
+```mermaid
+graph TD;
+    A[Usuário] -->|1. Acessa Página de Coleções| B[Página de Coleções];
+    B -->|2. Visualiza Coleções| C[Página de Coleções];
+    C -->|3. Explora Coleções| D{Escolha de Ação};
+    D -->|4. Seleciona Coleção| E[Página de Detalhes das Coleções];
+
+```
+
+### Página de Detalhes da Coleção
+
+```mermaid
+graph TD;
+    A[Usuário] -->|1. Acessa Página de Detalhes das Coleções| B[Página de Detalhes das Coleções];
+    B -->|2. Visualiza Livros da Coleção| C[Página de Detalhes das Coleções];
+    C -->|3. Explora Livros| D{Escolha de Ação};
+    D -->|4. Acessa Funcionalidade de Edição da Coleção| E[Página de Edição de Coleção];
+
+
+```
+
+
+### Página de Leituras
+
+```mermaid
+graph TD;
+    A[Usuário] -->|1. Acessa Página de Leituras| B[Página de Leituras];
+    B -->|2. Visualiza Livros Lendo Agora| C[Página de Leituras];
+    B -->|3. Visualiza Livros Lidos| D[Página de Leituras];
+    B -->|4. Visualiza Livros Quero Ler| E[Página de Leituras];
+    C -->|5. Explora Livros| F{Escolha de Ação};
+    D -->|5. Explora Livros| F;
+    E -->|5. Explora Livros| F;
+    F -->|6a. Acessa Detalhes do Livro| G[Página de Detalhes do Livro];
+
+
+```
+
+
+### Página de Configurações de Usuário
+
+
+```mermaid
+graph TD;
+    A[Usuário] -->|1. Acessa Página de Configurações do Usuário| B[Página de Configurações do Usuário];
+    B -->|2. Visualiza Formulário| C{Preenche Informações};
+    C -->|3. Insere Nome, Sobrenome, Email e Senha| D[Envia Formulário];
+    D -->|4. Envia Dados para Validação| E{Dados Válidos?};
+    E -->|5a. Sim| F[Alterações Aplicadas];
+    E -->|5b. Não| G[Exibe Mensagem de Erro];
+
+```
+
+
+
+
+
+
+
 
 
 
