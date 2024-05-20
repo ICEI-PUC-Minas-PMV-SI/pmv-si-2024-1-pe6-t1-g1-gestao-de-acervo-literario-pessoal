@@ -296,10 +296,9 @@ Com base nas respostas recebidas do servidor, a interface do usuário é atualiz
 |RF-003| Permitir o cadastro de um novo Acervo Pessoal  | ALTA |
 |RF-004| Possibilitar que o usuário registre os livros que está lendo | ALTA |
 |RF-005| Permitir a edição dos dados e status dos livros cadastrados | MÉDIA |
-|RF-006| Permitir o usuário exportar sua coleção no acervo pessoal em arquivo csv | MÉDIA |
-|RF-007| Permitir editar dados da conta de usuário | MÉDIA | 
-|RF-008| Permitir o usuário editar os dados de um Acervo Pessoal| MÉDIA |
-|RF-009| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
+|RF-006| Permitir editar dados da conta de usuário | MÉDIA | 
+|RF-007| Permitir o usuário editar os dados de um Acervo Pessoal| MÉDIA |
+|RF-008| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
 
 ## Requisitos Não Funcionais
 
@@ -506,10 +505,9 @@ graph TD;
 | RF-003          | Cadastro de novo Acervo Pessoal | Novo Acervo Pessoal é cadastrado com sucesso |  |
 | RF-004          | Registro de livros sendo lidos | Usuário consegue registrar os livros que está lendo |  |
 | RF-005          | Edição de dados e status dos livros | Usuário consegue editar os dados e status dos livros cadastrados |  |
-| RF-006          | Exportar coleção em arquivo CSV | Usuário consegue exportar sua coleção em arquivo CSV |  |
-| RF-007          | Edição de dados da conta de usuário | Usuário consegue editar os dados da sua conta de usuário |  |
-| RF-008          | Edição de dados de um Acervo Pessoal | Usuário consegue editar os dados de um Acervo Pessoal |  |
-| RF-009          | Acesso através de dispositivo móvel | Usuário consegue acessar o sistema através de um dispositivo móvel |  |
+| RF-006          | Edição de dados da conta de usuário | Usuário consegue editar os dados da sua conta de usuário |  |
+| RF-007          | Edição de dados de um Acervo Pessoal | Usuário consegue editar os dados de um Acervo Pessoal |  |
+| RF-008          | Acesso através de dispositivo móvel | Usuário consegue acessar o sistema através de um dispositivo móvel |  |
 
 ### Requisitos não funcionais
 
