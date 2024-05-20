@@ -137,7 +137,32 @@ O design visual do Bibliotech é limpo, moderno e focado na usabilidade. Utiliza
 
 
 ### Wireframes
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+
+![1](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/bf384875-c651-4087-aed4-0346e6a6cf12)
+
+![2](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/6d2fbd0f-06a9-4b7f-9118-a3bf769afe98)
+
+![3](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/015b36f3-e343-4d70-baaa-bd149eb57fef)
+
+![4](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/8508503c-5721-4a7e-bc4e-f90f0ef6ef30)
+
+![5](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/f061a989-b94e-4cf6-beed-0501e28fccc0)
+
+![6](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/526b678e-644d-485d-ba63-34384e95168e)
+
+![7](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/c9758d2a-7330-4564-851d-2f7eab5be342)
+
+![8](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/27850aea-ed65-4f61-b88b-184996e7b832)
+
+![9](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/ee7ffded-ee3a-4e52-9c21-b1b783d3d087)
+
+![10](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/9f8feead-694b-43b7-b81c-8abbdcf77ce5)
+
+![11](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/66419172-4ff1-4522-92a3-178a185acb3e)
+
+![12](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/43b9c16e-a31b-4784-9a65-cf2245a5f1fc)
+
+![Bibliotech-2](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2024-1-pe6-t1-g1-gestao-de-acervo-literario-pessoal/assets/85028708/05b601ef-c404-4ad1-afb1-979c7051816e)
 
 ### Design Visual
 
