@@ -1,0 +1,63 @@
+<app-navbar></app-navbar>
+<div class="bg-primary-200 h-screen dark:bg-gray-900">
+  <div class="grid grid-cols-5 pt-16">
+    <div
+      class="bg-gray-50 h-[446px] col-span-3 col-start-2 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
+    >
+      <div class="min-w-[280px] max-w-[280px]  rounded-lg bg-white">
+        <img
+          class="object-contain	 h-full w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+          src="../../../assets/icons/books.jpg"
+          alt="Default book image"
+        />
+      </div>
+      <div class="p-4 flex flex-col grid-rows-2 w-full">
+        <div class="flex flex-col">
+          <span class="text-xl text-primary-900 font-bold">{{
+            bookItem.title
+          }}</span>
+          <span class="text-gray-500 dark:text-gray-400 italic"
+            >Autor: {{ bookItem.authors }}</span
+          >
+          <div class="flex flex-col mt-3 text-black font-light">
+            <span class="dark:text-gray-400">
+              Ano de publicação: {{ bookItem.publishedYear }}</span
+            >
+            <span class="dark:text-gray-400">
+              Edição: {{ bookItem.edition }}</span
+            >
+            <span class="dark:text-gray-400">
+              Número de páginas: {{ bookItem.pageCount }}</span
+            >
+            <span class="dark:text-gray-400"> ISBN: {{ bookItem.isbn }}</span>
+            <span class="dark:text-gray-400">
+              Categorias: {{ bookItem.categories }}</span
+            >
+          </div>
+          <span
+            class="font-light pr-2 text-justify text-sm mt-2 h-[160px] overflow-auto"
+          >
+            {{ bookItem.description }}
+          </span>
+        </div>
+
+        <div class="h-full flex items-end justify-between pt-2">
+          <div>
+            <span
+              class="mt-1 uppercase text-sm font-bold py-1 px-2 text-primary-600 bg-primary-300 rounded border-primary-600 border-[1px]"
+              >{{ bookItem.read }}</span
+            >
+          </div>
+          <div>
+            <button
+              (click)="goToEdit()"
+              class="text-white whitespace-nowrap bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-8 lg:px-6 py-4 lg:py-3 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+            >
+              Editar livro
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

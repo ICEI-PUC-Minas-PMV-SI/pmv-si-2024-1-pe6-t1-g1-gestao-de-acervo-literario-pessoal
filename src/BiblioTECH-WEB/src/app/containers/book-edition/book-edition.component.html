@@ -1,0 +1,213 @@
+<app-navbar></app-navbar>
+<section class="bg-primary-200 dark:bg-gray-900">
+  <div class="max-w-2xl px-4 py-4 mx-auto lg:py-8">
+    <form [formGroup]="bookForm">
+      <div class="flex mr-8 mb-8">
+        <div class="flex flex-col">
+          <div class="mt-4">
+            <label
+              for="categories"
+              class="block mb-2 font-bold text-gray-900 dark:text-white"
+              >Status de leitura</label
+            >
+            <div class="grid grid-cols-3">
+              <div *ngFor="let item of status" class="mr-16">
+                <div class="mb-4 mr-5 flex">
+                  <div class="flex items-center">
+                    <input
+                      id="default-radio-1"
+                      type="radio"
+                      value=""
+                      name="default-radio"
+                      class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    />
+                    <label
+                      for="default-radio-1"
+                      class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                      >{{ item }}</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid gap-4 mb-4 sm:grid-cols-2 sm:gap-6 sm:mb-5">
+        <div class="w-full">
+          <label
+            for="title"
+            class="block mb-2 font-bold text-gray-900 dark:text-white"
+            >Título do livro</label
+          >
+          <input
+            name="title"
+            id="title"
+            formControlName="title"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            [value]="bookItem.title"
+            required=""
+          />
+        </div>
+        <div class="w-full">
+          <div class="flex">
+            <label
+              for="authors"
+              class="block mb-2 mr-2 font-bold text-gray-900 dark:text-white"
+              >Autores</label
+            >
+            <span class="text-[#808080]">(Separar autores por vírgula)</span>
+          </div>
+          <input
+            name="authors"
+            id="authors"
+            formControlName="authors"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            [value]="bookItem.authors"
+            required=""
+          />
+        </div>
+        <div class="w-full">
+          <label
+            for="year"
+            class="block mb-2 font-bold text-gray-900 dark:text-white"
+            >Ano de publicação</label
+          >
+          <input
+            name="year"
+            id="year"
+            type="number"
+            formControlName="publishedYear"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            [value]="bookItem.publishedYear"
+            required=""
+          />
+        </div>
+        <div class="w-full">
+          <label
+            for="edition"
+            class="block mb-2 font-bold text-gray-900 dark:text-white"
+            >Edição</label
+          >
+          <input
+            name="edition"
+            id="edition"
+            formControlName="edition"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            [value]="bookItem.edition"
+            required=""
+          />
+        </div>
+        <div>
+          <label
+            for="pages"
+            class="block mb-2 font-bold text-gray-900 dark:text-white"
+            >Número de páginas</label
+          >
+          <input
+            type="number"
+            name="pages"
+            id="pages"
+            formControlName="pageCount"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            [value]="bookItem.pageCount"
+            required=""
+          />
+        </div>
+        <div>
+          <label
+            for="isbn"
+            class="block mb-2 font-bold text-gray-900 dark:text-white"
+            >ISBN</label
+          >
+          <input
+            name="isbn"
+            id="isbn"
+            formControlName="isbn"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            [value]="bookItem.isbn"
+            required=""
+          />
+        </div>
+
+        <div class="sm:col-span-2">
+          <label
+            for="categories"
+            class="block mb-2 font-bold text-gray-900 dark:text-white"
+            >Categorias</label
+          >
+          <div class="grid grid-cols-3">
+            <div *ngFor="let item of categories">
+              <div class="mb-4 mr-5">
+                <div class="">
+                  <input
+                    id="default-checkbox"
+                    type="checkbox"
+                    value=""
+                    class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  />
+                  <label
+                    for="default-checkbox"
+                    class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    >{{ item }}</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm:col-span-2">
+          <label
+            for="description"
+            class="block mb-2 font-bold text-gray-900 dark:text-white"
+            >Descrição</label
+          >
+          <textarea
+            id="description"
+            formControlName="description"
+            rows="8"
+            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            placeholder="Write a product description here..."
+            [value]="bookItem.description"
+          ></textarea>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4">
+        <button
+          *ngIf="!isEdit"
+          (click)="onSave()"
+          class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+        >
+          Adicionar livro
+        </button>
+        <div class="flex gap-x-2" *ngIf="!!isEdit">
+          <button
+            (click)="onSave()"
+            class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+          >
+            Atualizar informações
+          </button>
+          <button
+            type="button"
+            (click)="onRemove()"
+            class="text-red-600 inline-flex items-center hover:text-white border border-red-600 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
+          >
+            <svg
+              class="w-5 h-5 mr-1 -ml-1"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            Excluir livro
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

@@ -1,0 +1,110 @@
+<app-navbar></app-navbar>
+<div class="bg-primary-200 h-screen dark:bg-gray-900">
+  <div class="py-4 px-4 mx-auto max-w-screen-xl lg:py-8 lg:px-6">
+    <div class="my-4 flex flex-col">
+      <label
+        for="categories"
+        class="text-2xl mb-2 font-bold text-gray-900 dark:text-white"
+        >Status de leitura</label
+      >
+      <div class="flex">
+        <div *ngFor="let item of status">
+          <div class="mb-4 mr-5">
+            <div class="flex items-center">
+              <input
+                id="default-radio-1"
+                type="radio"
+                value=""
+                name="default-radio"
+                class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                for="default-radio-1"
+                class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >{{ item }}</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      *ngIf="booksFiltered?.length"
+      class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3"
+    >
+      <div *ngFor="let item of booksFiltered">
+        <div
+          role="button"
+          class="bg-gray-50 h-[180px] rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
+        >
+          <div class="min-w-[120px] max-w-[120px]">
+            <img
+              class="object-cover h-full w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+              src="https://i0.wp.com/www.olivroaberto.com.br/wp-content/uploads/2015/11/livro-sonho.jpg?fit=1125%2C916&ssl=1"
+              alt="Bonnie Avatar"
+            />
+          </div>
+          <div class="px-4 py-2 flex flex-col">
+            <span class="text-xl font-bold">{{ item.title }}</span>
+            <div>
+              <span class="text-gray-500 dark:text-gray-400">Autor: </span>
+              <span class="text-gray-500 dark:text-gray-400">
+                {{ item.authors }}</span
+              >
+            </div>
+            <span class="line-clamp-3 font-light text-sm mt-2">
+              {{ item.description }}
+            </span>
+            <span
+              class="mt-1 uppercase text-sm font-bold w-fit py-1 px-2 text-primary-600 bg-primary-300 rounded border-primary-600 border-[1px]"
+              >{{ item.read }}</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="!booksFiltered?.length">
+      <div *ngIf="!collections?.length" class="flex items-center flex-col">
+        <img
+          class="w-64 h-64 mr-4"
+          src="../assets/icons/empty.png"
+          alt="logo"
+        />
+        <div class="mt-4 text-4xl text-primary-600">Comece sua coleção</div>
+        <button
+          [routerLink]="['/new-collection', 'new']"
+          class="text-white mt-4 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-8 lg:px-6 py-4 lg:py-3 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+        >
+          Criar nova coleção
+        </button>
+      </div>
+
+      <div
+        *ngIf="!booksList?.length && !!collections?.length"
+        class="flex items-center flex-col"
+      >
+        <img
+          class="w-64 h-64 mr-4"
+          src="../assets/icons/empty.png"
+          alt="logo"
+        />
+        <div class="mt-4 text-4xl text-primary-600">
+          Adicione um livro a sua coleção
+        </div>
+        <button
+          [routerLink]="['/book-edition', 'new']"
+          class="text-white mt-4 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-8 lg:px-6 py-4 lg:py-3 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+        >
+          Criar novo livro
+        </button>
+      </div>
+      <div *ngIf="!!booksList?.length"
+      class="flex justify-center items-center text-primary-900 text-4xl font-bold h-[200px]"
+      >
+        Não há livros com esse status
+      </div>
+    </div>
+
+  </div>
+</div>

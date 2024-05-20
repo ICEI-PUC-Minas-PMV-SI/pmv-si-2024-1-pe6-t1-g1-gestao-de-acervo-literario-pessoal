@@ -1,0 +1,74 @@
+<app-navbar></app-navbar>
+<div class="bg-primary-200 h-screen dark:bg-gray-900">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <div class="flex flex-col items-center">
+      <div class="flex justify-between w-full">
+        <div
+          class="flex justify-center text-4xl font-bold mb-4 text-primary-600 uppercase"
+        >
+          {{ collectionItem.title }}
+        </div>
+        <button
+          (click)="onEdit()"
+          class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-8 lg:px-6 py-4 lg:py-3 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+        >
+          Editar coleção
+        </button>
+      </div>
+      <div class="mb-12 text-justify self-start w-full">
+        {{ collectionItem.description }}
+      </div>
+    </div>
+
+    <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3">
+      <div *ngFor="let item of books">
+        <div
+          role="button"
+          (click)="goToDetails(item)"
+          class="bg-gray-50 h-[180px] rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
+        >
+          <div class="min-w-[120px] max-w-[120px] bg-white rounded-lg">
+            <img
+            class="object-contain h-full w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+            src="../../../assets/icons/books.jpg"
+              alt="Bonnie Avatar"
+            />
+          </div>
+
+          <div class="px-4 py-2 flex flex-col">
+            <span class="text-xl font-bold">{{ item.title }}</span>
+
+            <span class="text-gray-500 dark:text-gray-400">Autores:</span>
+            <span class="text-gray-500 dark:text-gray-400">
+              {{ item.authors.join(", ") }}</span
+            >
+
+            <span class="line-clamp-3 font-light text-sm mt-2">
+              {{ item.description }}
+            </span>
+            <span
+              class="items-end mt-1 uppercase text-sm font-bold w-fit py-1 px-2 text-primary-600 bg-primary-300 rounded border-primary-600 border-[1px]"
+              >{{ item.read }}</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+      *ngIf="!books?.length"
+      class="flex items-center flex-col"
+    >
+      <img class="w-64 h-64 mr-4" src="../assets/icons/empty.png" alt="logo" />
+      <div class="mt-4 text-4xl text-primary-600">
+        Adicione um livro a sua coleção
+      </div>
+      <button
+        [routerLink]="['/book-edition', 'new']"
+        class="text-white mt-4 bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-8 lg:px-6 py-4 lg:py-3 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+      >
+        Criar novo livro
+      </button>
+    </div>
+    </div>
+  </div>
+</div>
