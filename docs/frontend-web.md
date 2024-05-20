@@ -25,12 +25,6 @@ Frontend: Angular, tailwind e flowbite para a construção da interface do usuá
 Responsável pela apresentação dos elementos visuais da aplicação.
 Inclui páginas, componentes de formulário, botões, barras de navegação, etc.
 
-- Estado Global (Global State):
-
-Gerenciado com Redux.
-Armazena o estado global da aplicação, como informações do usuário, livros da biblioteca, etc.
-Permite o compartilhamento de estado entre diferentes componentes.
-
 - Serviços de API:
 
 Módulos responsáveis por realizar chamadas à API do backend para recuperar ou enviar dados.
@@ -89,7 +83,7 @@ O design visual do Bibliotech é limpo, moderno e focado na usabilidade. Utiliza
   
 - Exibe um formulário para adicionar um novo livro à biblioteca pessoal do usuário.
 
-- Inclui campos para inserir informações como título, autor, editora, ano de publicação, capa do livro, etc.
+- Inclui campos para inserir informações como título, autor, editora, ano de publicação, etc.
 
 
 ##### Página de Detalhes do Livro:
@@ -103,7 +97,7 @@ O design visual do Bibliotech é limpo, moderno e focado na usabilidade. Utiliza
   
 - Exibe um formulário para editar um livro da biblioteca pessoal do usuário.
 
-- Inclui campos para inserir informações como título, autor, editora, ano de publicação, capa do livro, etc.
+- Inclui campos para inserir informações como título, autor, editora, ano de publicação, etc.
 
 
 ##### Página de Coleções:
@@ -115,7 +109,7 @@ O design visual do Bibliotech é limpo, moderno e focado na usabilidade. Utiliza
   
 - Apresenta os livros cadastrados da coleção selecionada.
 
-- Cada livro é exibido com sua capa, título, autor e outras informações relevantes.
+- Cada livro é exibido com seu título, autor e outras informações relevantes.
 
 - Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
 
@@ -124,7 +118,7 @@ O design visual do Bibliotech é limpo, moderno e focado na usabilidade. Utiliza
    
 - Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções, como "Lendo Agora", "Lidos" e "Quero Ler".
 
-- Cada livro é exibido com sua capa, título, autor e outras informações relevantes.
+- Cada livro é exibido com seu título, autor e outras informações relevantes.
 
 - Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
 
@@ -184,7 +178,7 @@ Além das cores, tipografia e ícones, outros elementos gráficos podem incluir:
 
 - Botões: Botões com bordas arredondadas e efeitos de hover suaves para indicar interatividade.
 - Barra de Navegação: Uma barra de navegação simples e intuitiva.
-- Cards de Livros: Elementos gráficos que exibem informações sobre os livros na biblioteca do usuário, com uma imagem da capa do livro, título, autor e outras informações como status de leitura, etc.
+- Cards de Livros: Elementos gráficos que exibem informações sobre os livros na biblioteca do usuário, título, autor e outras informações como status de leitura, etc.
   
 ### Layout Responsivo
 
@@ -438,7 +432,7 @@ graph TD;
 graph TD;
     A[Usuário] -->|1. Acessa Página de Edição de Livro| B[Página de Edição de Livro];
     B -->|2. Visualiza Formulário| C{Preenche Informações};
-    C -->|3. Insere Título, Autor, Editora, Ano de Publicação, Capa do Livro, etc.| D[Envia Formulário];
+    C -->|3. Insere Título, Autor, Editora, Ano de Publicação, etc.| D[Envia Formulário];
     D -->|4. Envia Dados para Validação| E{Dados Válidos?};
     E -->|5a. Sim| F[Livro Editado com Sucesso];
     E -->|5b. Não| G[Tentar novamente];
