@@ -472,19 +472,9 @@ graph TD;
     C -->|3. Insere Nome, Sobrenome, Email e Senha| D[Envia Formulário];
     D -->|4. Envia Dados para Validação| E{Dados Válidos?};
     E -->|5a. Sim| F[Alterações Aplicadas];
-    E -->|5b. Não| G[Exibe Mensagem de Erro];
+    E -->|5b. Não| G[Tentar novamente];
 
 ```
-
-
-
-
-
-
-
-
-
-
 
 
 ## Considerações de Segurança
@@ -506,13 +496,29 @@ graph TD;
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+### Requisitos Funcionais
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+| ID do Requisito | Descrição do Caso de Teste | Resultado Esperado | Resultado Obtido |
+|-----------------|-----------------------------|--------------------|------------------|
+| RF-001          | Cadastro de novo usuário    | Novo usuário é cadastrado com sucesso no site |  |
+| RF-002          | Login no site               | Usuário consegue realizar o login com sucesso |  |
+| RF-002          | Logout do site              | Usuário consegue realizar o logout com sucesso |  |
+| RF-003          | Cadastro de novo Acervo Pessoal | Novo Acervo Pessoal é cadastrado com sucesso |  |
+| RF-004          | Registro de livros sendo lidos | Usuário consegue registrar os livros que está lendo |  |
+| RF-005          | Edição de dados e status dos livros | Usuário consegue editar os dados e status dos livros cadastrados |  |
+| RF-006          | Exportar coleção em arquivo CSV | Usuário consegue exportar sua coleção em arquivo CSV |  |
+| RF-007          | Edição de dados da conta de usuário | Usuário consegue editar os dados da sua conta de usuário |  |
+| RF-008          | Edição de dados de um Acervo Pessoal | Usuário consegue editar os dados de um Acervo Pessoal |  |
+| RF-009          | Acesso através de dispositivo móvel | Usuário consegue acessar o sistema através de um dispositivo móvel |  |
+
+### Requisitos não funcionais
+
+| ID do Requisito | Descrição do Caso de Teste | Resultado Esperado | Resultado Obtido |
+|-----------------|-----------------------------|--------------------|------------------|
+| RNF-001         | Interface intuitiva e fácil de usar | Usuários conseguem navegar facilmente pelo sistema, sem a necessidade de treinamento extensivo |  |
+| RNF-002         | Garantia de segurança dos dados pessoais | Os dados pessoais e de leitura dos usuários são protegidos por medidas de segurança, como criptografia e controle de acesso |  |
+| RNF-003         | Responsividade do sistema em dispositivos móveis | O sistema se adapta corretamente a diferentes tamanhos de tela e funcionalidades principais são acessíveis em dispositivos móveis |  |
+
 
 # Referências
 
