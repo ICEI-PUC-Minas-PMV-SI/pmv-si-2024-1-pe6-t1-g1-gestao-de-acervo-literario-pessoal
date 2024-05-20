@@ -520,4 +520,4 @@ graph TD;
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+https://angular.io/docs, https://tailwindcss.com, https://flowbite.com/docs/getting-started/introduction/
