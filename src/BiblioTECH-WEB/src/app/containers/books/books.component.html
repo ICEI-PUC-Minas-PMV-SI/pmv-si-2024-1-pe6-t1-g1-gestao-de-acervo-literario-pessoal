@@ -24,19 +24,19 @@
               />
             </div>
             <div class="px-4 py-2 flex flex-col">
-              <span class="text-xl font-bold">{{ item.title }}</span>
+              <span class="text-xl font-bold">{{ item?.title }}</span>
               <div>
                 <span class="text-gray-500 dark:text-gray-400">Autor:</span>
                 <span class="text-gray-500 dark:text-gray-400">
-                  {{ item.authors }}</span
+                  {{ item?.authors }}</span
                 >
               </div>
               <span class="line-clamp-3 font-light text-sm mt-2">
-                {{ item.description }}
+                {{ item?.description }}
               </span>
               <span
                 class="mt-1 uppercase text-sm font-bold w-fit py-1 px-2 text-primary-600 bg-primary-300 rounded border-primary-600 border-[1px]"
-                >{{ item.read }}</span
+                >{{ item?.read }}</span
               >
             </div>
           </div>

@@ -19,12 +19,10 @@
               <div
                 class="h-16 bg-primary-950 text-white w-full rounded-t flex items-center justify-center"
               >
-                {{item.title}}
+                {{ item?.title }}
               </div>
               <div class="p-4 text-justify">
-                <span
-                  > {{item.description}}</span
-                >
+                <span> {{ item?.description }}</span>
               </div>
             </div>
           </div>
@@ -32,7 +30,7 @@
       </div>
     </div>
 
-    <div *ngIf="!collections" class="flex items-center flex-col">
+    <div *ngIf="!collections.length" class="flex items-center flex-col">
       <img class="w-64 h-64 mr-4" src="../assets/icons/empty.png" alt="logo" />
       <div class="mt-4 text-4xl text-primary-600">Comece sua coleção</div>
       <button

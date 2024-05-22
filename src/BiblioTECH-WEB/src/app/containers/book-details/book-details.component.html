@@ -4,9 +4,9 @@
     <div
       class="bg-gray-50 h-[446px] col-span-3 col-start-2 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700"
     >
-      <div class="min-w-[280px] max-w-[280px]  rounded-lg bg-white">
+      <div class="min-w-[280px] max-w-[280px] rounded-lg bg-white">
         <img
-          class="object-contain	 h-full w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
+          class="object-contain h-full w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
           src="../../../assets/icons/books.jpg"
           alt="Default book image"
         />
@@ -14,30 +14,30 @@
       <div class="p-4 flex flex-col grid-rows-2 w-full">
         <div class="flex flex-col">
           <span class="text-xl text-primary-900 font-bold">{{
-            bookItem.title
+            bookItem?.title
           }}</span>
           <span class="text-gray-500 dark:text-gray-400 italic"
-            >Autor: {{ bookItem.authors }}</span
+            >Autor: {{ bookItem?.authors }}</span
           >
           <div class="flex flex-col mt-3 text-black font-light">
             <span class="dark:text-gray-400">
-              Ano de publicação: {{ bookItem.publishedYear }}</span
+              Ano de publicação: {{ bookItem?.publishedYear }}</span
             >
             <span class="dark:text-gray-400">
-              Edição: {{ bookItem.edition }}</span
+              Edição: {{ bookItem?.edition }}</span
             >
             <span class="dark:text-gray-400">
-              Número de páginas: {{ bookItem.pageCount }}</span
+              Número de páginas: {{ bookItem?.pageCount }}</span
             >
-            <span class="dark:text-gray-400"> ISBN: {{ bookItem.isbn }}</span>
+            <span class="dark:text-gray-400"> ISBN: {{ bookItem?.isbn }}</span>
             <span class="dark:text-gray-400">
-              Categorias: {{ bookItem.categories }}</span
+              Categorias: {{ bookItem?.categories }}</span
             >
           </div>
           <span
             class="font-light pr-2 text-justify text-sm mt-2 h-[160px] overflow-auto"
           >
-            {{ bookItem.description }}
+            {{ bookItem?.description }}
           </span>
         </div>
 
@@ -45,7 +45,7 @@
           <div>
             <span
               class="mt-1 uppercase text-sm font-bold py-1 px-2 text-primary-600 bg-primary-300 rounded border-primary-600 border-[1px]"
-              >{{ bookItem.read }}</span
+              >{{ bookItem?.read }}</span
             >
           </div>
           <div>

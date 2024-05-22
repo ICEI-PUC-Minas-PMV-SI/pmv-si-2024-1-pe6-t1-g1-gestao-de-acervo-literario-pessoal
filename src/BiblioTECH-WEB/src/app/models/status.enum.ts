@@ -1,7 +1,5 @@
-
-
 export enum Status {
-  NotStarted = "Não iniciado",
-  Started = "Iniciado",
-  Finished = "Finalizado",
+  NotStarted = "Não lido",
+  Started = "Lendo",
+  Finished = "Lido",
 }

@@ -2,6 +2,58 @@
 <section class="bg-primary-200 dark:bg-gray-900">
   <div class="max-w-2xl px-4 py-4 mx-auto lg:py-8">
     <form [formGroup]="bookForm">
+      <label
+        for="isbn"
+        class="block mb-2 font-bold text-gray-900 dark:text-white"
+        >Coleção</label
+      >
+      <button
+        id="dropdownDefaultButton"
+        data-dropdown-toggle="dropdown"
+        placeholder="Selecione a categoria"
+        class="text-primary-600 w-[384px] border-[1px] border-primary-600 bg-white hover:bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        type="button"
+      >
+        <span class="w-full text-left">
+          {{ bookForm.get("collection")?.value?.title }}
+        </span>
+        <div class="flex justify-end w-full">
+          <svg
+            class="w-2.5 h-2.5 ms-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 10 6"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 4 4 4-4"
+            />
+          </svg>
+        </div>
+      </button>
+
+      <div
+        id="dropdown"
+        class="z-10 hidden w-[384px] bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+      >
+        <ul
+          class="py-2 text-sm text-gray-700 dark:text-gray-200"
+          aria-labelledby="dropdownDefaultButton"
+        >
+          <li *ngFor="let item of collectionsOptions; let index = index">
+            <a
+              (click)="bookForm.get('collection')?.setValue(item)"
+              class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+            >
+              {{ item?.title }}
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="flex mr-8 mb-8">
         <div class="flex flex-col">
           <div class="mt-4">
@@ -17,8 +69,8 @@
                     <input
                       id="default-radio-1"
                       type="radio"
-                      value=""
-                      name="default-radio"
+                      [formControlName]="'read'"
+                      [value]="item"
                       class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                     />
                     <label
@@ -45,7 +97,7 @@
             id="title"
             formControlName="title"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-            [value]="bookItem.title"
+            [value]="bookItem?.title"
             required=""
           />
         </div>
@@ -63,7 +115,7 @@
             id="authors"
             formControlName="authors"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-            [value]="bookItem.authors"
+            [value]="bookItem?.authors"
             required=""
           />
         </div>
@@ -79,7 +131,7 @@
             type="number"
             formControlName="publishedYear"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-            [value]="bookItem.publishedYear"
+            [value]="bookItem?.publishedYear"
             required=""
           />
         </div>
@@ -94,7 +146,7 @@
             id="edition"
             formControlName="edition"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-            [value]="bookItem.edition"
+            [value]="bookItem?.edition"
             required=""
           />
         </div>
@@ -110,7 +162,7 @@
             id="pages"
             formControlName="pageCount"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-            [value]="bookItem.pageCount"
+            [value]="bookItem?.pageCount"
             required=""
           />
         </div>
@@ -125,7 +177,7 @@
             id="isbn"
             formControlName="isbn"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-            [value]="bookItem.isbn"
+            [value]="bookItem?.isbn"
             required=""
           />
         </div>
@@ -141,9 +193,9 @@
               <div class="mb-4 mr-5">
                 <div class="">
                   <input
-                    id="default-checkbox"
                     type="checkbox"
-                    value=""
+                    [checked]="isSelected(item)"
+                    (change)="toggleCategorySelection(item)"
                     class="w-4 h-4 text-primary-600 bg-gray-100 border-gray-300 rounded focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                   />
                   <label
@@ -168,7 +220,7 @@
             rows="8"
             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
             placeholder="Write a product description here..."
-            [value]="bookItem.description"
+            [value]="bookItem?.description"
           ></textarea>
         </div>
       </div>
