@@ -52,4 +52,20 @@ export class ReadingsComponent implements OnInit {
       read: [Status.Finished, [Validators.required]],
     });
   }
+
+  getRead(bookRead: string): string {
+    let read = "";
+    switch (bookRead) {
+      case "reading":
+        read = Status.Started;
+        break;
+      case "not_read":
+        read = Status.NotStarted;
+        break;
+      case "read":
+        read = Status.Finished;
+        break;
+    }
+    return read;
+  }
 }

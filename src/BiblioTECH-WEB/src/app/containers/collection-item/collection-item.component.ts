@@ -3,6 +3,7 @@ import { Router } from "@angular/router";
 import { initFlowbite } from "flowbite";
 import { Book } from "src/app/models/book.model";
 import { Collection } from "src/app/models/collection.model";
+import { Status } from "src/app/models/status.enum";
 import { BibliotechService } from "src/app/service/bibliotech.service";
 
 @Component({
@@ -33,5 +34,21 @@ export class CollectionItemComponent implements OnInit {
   onEdit() {
     this.service.collectionItem = this.collectionItem;
     this.router.navigate(["new-collection", "edit"]);
+  }
+
+  getRead(bookRead: string): string {
+    let read = "";
+    switch (bookRead) {
+      case "reading":
+        read = Status.Started;
+        break;
+      case "not_read":
+        read = Status.NotStarted;
+        break;
+      case "read":
+        read = Status.Finished;
+        break;
+    }
+    return read;
   }
 }
