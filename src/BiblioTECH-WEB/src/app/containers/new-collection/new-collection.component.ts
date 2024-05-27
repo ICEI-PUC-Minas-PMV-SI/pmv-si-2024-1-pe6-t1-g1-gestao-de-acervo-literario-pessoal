@@ -41,7 +41,7 @@ export class NewCollectionComponent implements OnInit {
 
   onSave() {
     this.collectionItem = {
-      id: this.collectionItem.id,
+      ...this.collectionItem,
       title: this.collectionForm.get("title")?.value,
       description: this.collectionForm.get("description")?.value,
       userId: +this.service.userId,

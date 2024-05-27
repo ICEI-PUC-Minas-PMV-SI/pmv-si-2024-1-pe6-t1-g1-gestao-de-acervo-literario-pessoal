@@ -24,11 +24,11 @@ export class CollectionItemComponent implements OnInit {
 
     this.service
       .getBooksByCollection(this.collectionItem.id || 0)
-      .subscribe((value) => (this.books = value));
+      .subscribe((value) => (this.books = value.data));
   }
 
   goToDetails(value: Book) {
-    this.service.bookItem = value;
+    this.service.bookItem = {...value, collection: this.collectionItem};
     this.router.navigate(["book-details"]);
   }
 

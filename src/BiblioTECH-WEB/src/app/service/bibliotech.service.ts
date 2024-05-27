@@ -19,7 +19,7 @@ export class BibliotechService {
   userId: string = "";
   jwtToken = "";
 
-  private apiUrl = "http://ec2-54-90-240-236.compute-1.amazonaws.com/";
+  private apiUrl = "http://ec2-54-147-29-215.compute-1.amazonaws.com/";
 
   constructor(
     private httpClient: HttpClient,
@@ -161,7 +161,7 @@ export class BibliotechService {
     return this.httpClient.put<any>(
       this.apiUrl + "collection/",
       {
-        id: "8",
+        id: collection.id,
         title: collection.title,
         description: collection.description,
       },

@@ -1,6 +1,7 @@
+import { CookieService } from "ngx-cookie-service";
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 import { Register } from "src/app/models/register.model";
 import { BibliotechService } from "src/app/service/bibliotech.service";
 
@@ -17,7 +18,9 @@ export class RegisterComponent implements OnInit {
   constructor(
     private service: BibliotechService,
     private fb: FormBuilder,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router,
+    private cookieService: CookieService
   ) {}
 
   ngOnInit(): void {
@@ -58,8 +61,10 @@ export class RegisterComponent implements OnInit {
       this.service.register(this.registerForm.value).subscribe();
     } else {
       this.service.updateUser(this.registerForm.value).subscribe((update) => {
-        this.service.user = update;
-        this.service.userId = update.id;
+        this.service.user = update.data;
+        this.service.userId = update.data.id;
+        this.cookieService.set("userObject", JSON.stringify(this.service.user));
+        this.router.navigate(["/books"]);
       });
     }
   }

@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <div class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3">
+    <div *ngIf="books?.length" class="grid gap-8 mb-6 lg:mb-16 md:grid-cols-3">
       <div *ngFor="let item of books">
         <div
           role="button"

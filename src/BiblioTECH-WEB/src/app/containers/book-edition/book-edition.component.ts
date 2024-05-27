@@ -80,7 +80,7 @@ export class BookEditionComponent implements OnInit {
     }
     const authors = this.bookItem.authors.join(", ");
     this.selectedCategories = this.bookItem.categories;
-    debugger;
+
     this.bookForm = this.fb.group({
       title: [this.bookItem.title, [Validators.required]],
       authors: [authors, [Validators.required]],
