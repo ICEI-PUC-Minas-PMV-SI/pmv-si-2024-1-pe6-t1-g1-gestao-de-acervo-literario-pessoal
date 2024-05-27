@@ -1,28 +1,28 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppComponent } from './app.component';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { BibliotechService } from './service/bibliotech.service';
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule } from '@angular/forms';
-import { LoginComponent } from './containers/login/login.component';
-import { RegisterComponent } from './containers/register/register.component';
-import { BibliotechRoutingModule } from './routing.module';
+import { AppComponent } from "./app.component";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
+import { BibliotechService } from "./service/bibliotech.service";
+import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
+import { ReactiveFormsModule } from "@angular/forms";
+import { LoginComponent } from "./containers/login/login.component";
+import { RegisterComponent } from "./containers/register/register.component";
+import { BibliotechRoutingModule } from "./routing.module";
 
-import { BookDetailsComponent } from './containers/book-details/book-details.component';
-import { AddBodyToGetInterceptor } from './utils/jwt-interceptor';
-import { BookEditionComponent } from './containers/book-edition/book-edition.component';
-import { BooksComponent } from './containers/books/books.component';
-import { CollectionComponent } from './containers/collection/collection.component';
-import { CollectionItemComponent } from './containers/collection-item/collection-item.component';
-import { NavbarComponent } from './containers/navbar/navbar.component';
-import { NewCollectionComponent } from './containers/new-collection/new-collection.component';
-import { ReadingsComponent } from './containers/readings/readings.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
-
-
+import { BookDetailsComponent } from "./containers/book-details/book-details.component";
+import { AddBodyToGetInterceptor } from "./utils/jwt-interceptor";
+import { BookEditionComponent } from "./containers/book-edition/book-edition.component";
+import { BooksComponent } from "./containers/books/books.component";
+import { CollectionComponent } from "./containers/collection/collection.component";
+import { CollectionItemComponent } from "./containers/collection-item/collection-item.component";
+import { NavbarComponent } from "./containers/navbar/navbar.component";
+import { NewCollectionComponent } from "./containers/new-collection/new-collection.component";
+import { ReadingsComponent } from "./containers/readings/readings.component";
+import { LandingPageComponent } from "./landing-page/landing-page.component";
+import { ToastrModule } from "ngx-toastr";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     NavbarComponent,
     NewCollectionComponent,
     ReadingsComponent,
-    LandingPageComponent
+    LandingPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,11 +45,18 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     RouterModule,
     HttpClientModule,
     ReactiveFormsModule,
-    BibliotechRoutingModule
+    BibliotechRoutingModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [
-    { provide: HTTP_INTERCEPTORS, useClass: AddBodyToGetInterceptor, multi: true }, BibliotechService
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AddBodyToGetInterceptor,
+      multi: true,
+    },
+    BibliotechService,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

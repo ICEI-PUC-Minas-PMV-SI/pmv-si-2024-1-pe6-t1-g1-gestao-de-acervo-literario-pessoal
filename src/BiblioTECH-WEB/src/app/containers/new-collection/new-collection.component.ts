@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { ActivatedRoute, Router } from "@angular/router";
 import { initFlowbite } from "flowbite";
+import { ToastrService } from "ngx-toastr";
 import { Collection } from "src/app/models/collection.model";
 import { BibliotechService } from "src/app/service/bibliotech.service";
 
@@ -21,7 +22,8 @@ export class NewCollectionComponent implements OnInit {
     private service: BibliotechService,
     private fb: FormBuilder,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private toastService: ToastrService
   ) {}
 
   ngOnInit() {
@@ -48,15 +50,27 @@ export class NewCollectionComponent implements OnInit {
     };
 
     if (this.isEdit) {
-      this.service.updateCollection(this.collectionItem).subscribe();
+      this.service
+        .updateCollection(this.collectionItem)
+        .subscribe(() =>
+          this.toastService.success("Coleção editada com sucesso!")
+        );
     } else {
-      this.service.saveCollection(this.collectionItem).subscribe();
+      this.service
+        .saveCollection(this.collectionItem)
+        .subscribe(() =>
+          this.toastService.success("Coleção salva com sucesso!")
+        );
     }
     this.router.navigate(["collection"]);
   }
 
   onRemove() {
-    this.service.removeCollection(this.collectionItem.id).subscribe();
+    this.service
+      .removeCollection(this.collectionItem.id)
+      .subscribe(() =>
+        this.toastService.success("Coleção removida com sucesso!")
+      );
     this.router.navigate(["collection"]);
   }
 

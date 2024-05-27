@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { ActivatedRoute, Router } from "@angular/router";
 import { initFlowbite } from "flowbite";
+import { ToastrService } from "ngx-toastr";
 import { Book } from "src/app/models/book.model";
 import { Categories } from "src/app/models/categoriess.enum";
 import { Collection } from "src/app/models/collection.model";
@@ -27,7 +28,8 @@ export class BookEditionComponent implements OnInit {
     private service: BibliotechService,
     private fb: FormBuilder,
     private route: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    private toastService: ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -122,9 +124,15 @@ export class BookEditionComponent implements OnInit {
     };
 
     if (this.isEdit) {
-      this.service.updateBook(this.bookItem).subscribe();
+      this.service
+        .updateBook(this.bookItem)
+        .subscribe(() =>
+          this.toastService.success("Livro editado com sucesso!")
+        );
     } else {
-      this.service.saveBook(this.bookItem).subscribe();
+      this.service
+        .saveBook(this.bookItem)
+        .subscribe(() => this.toastService.success("Livro salvo com sucesso!"));
     }
     this.router.navigate(["books"]);
   }
