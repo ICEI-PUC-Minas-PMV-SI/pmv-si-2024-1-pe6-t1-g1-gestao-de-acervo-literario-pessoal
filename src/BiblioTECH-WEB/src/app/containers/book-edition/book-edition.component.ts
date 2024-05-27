@@ -31,9 +31,12 @@ export class BookEditionComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.service.getUser();
     initFlowbite();
 
-    this.collectionsOptions = this.service.collectionList;
+    this.service.getCollections().subscribe((value) => {
+      this.collectionsOptions = value.data;
+    });
 
     this.initializeForm();
 
@@ -77,7 +80,7 @@ export class BookEditionComponent implements OnInit {
     }
     const authors = this.bookItem.authors.join(", ");
     this.selectedCategories = this.bookItem.categories;
-
+    debugger;
     this.bookForm = this.fb.group({
       title: [this.bookItem.title, [Validators.required]],
       authors: [authors, [Validators.required]],

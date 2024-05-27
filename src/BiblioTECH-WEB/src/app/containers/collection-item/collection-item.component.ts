@@ -18,6 +18,7 @@ export class CollectionItemComponent implements OnInit {
   books: Book[] = [];
 
   ngOnInit() {
+    this.service.getUser();
     initFlowbite();
     this.collectionItem = this.service.collectionItem;
 

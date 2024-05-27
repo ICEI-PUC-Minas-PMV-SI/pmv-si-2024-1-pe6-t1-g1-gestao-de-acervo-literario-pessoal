@@ -16,6 +16,7 @@ export class BookDetailsComponent implements OnInit {
   constructor(private service: BibliotechService, private router: Router) {}
 
   ngOnInit(): void {
+    this.service.getUser();
     initFlowbite();
     this.bookItem = this.service.bookItem;
   }

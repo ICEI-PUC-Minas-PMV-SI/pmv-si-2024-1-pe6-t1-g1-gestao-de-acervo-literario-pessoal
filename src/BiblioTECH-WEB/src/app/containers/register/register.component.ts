@@ -21,6 +21,7 @@ export class RegisterComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.service.getUser();
     this.initializeForm();
 
     this.route.params.subscribe((params) => {

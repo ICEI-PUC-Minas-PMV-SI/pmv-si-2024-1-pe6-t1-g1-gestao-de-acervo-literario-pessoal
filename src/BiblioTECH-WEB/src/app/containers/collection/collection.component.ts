@@ -18,10 +18,12 @@ export class CollectionComponent implements OnInit {
   constructor(private service: BibliotechService, private router: Router) {}
 
   ngOnInit(): void {
+    this.service.getUser();
     initFlowbite();
-
-    this.books = this.service.bookList;
-    this.collections = this.service.collectionList;
+    this.service.getCollections().subscribe((value) => {
+      this.collections = value.data;
+    });
+    this.service.getBooks().subscribe((value) => (this.books = value.data));
   }
 
   goToDetails(value: Collection) {

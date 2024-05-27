@@ -20,13 +20,19 @@ export class ReadingsComponent implements OnInit {
   constructor(private service: BibliotechService, private fb: FormBuilder) {}
 
   ngOnInit() {
+    this.service.getUser();
     initFlowbite();
 
-    this.booksList = this.service.bookList;
-    this.collections = this.service.collectionList;
-    this.booksFiltered = this.booksList.filter(
-      (value) => value.read === "read"
-    );
+    this.service.getCollections().subscribe((value) => {
+      this.collections = value.data;
+    });
+    this.service.getBooks().subscribe((value) => {
+      this.booksList = value.data;
+      this.booksFiltered = this.booksList.filter(
+        (value) => value.read === "read"
+      );
+    });
+
     this.initializeForm();
 
     this.readingForm.get("read")?.valueChanges.subscribe((value) => {
@@ -43,7 +49,9 @@ export class ReadingsComponent implements OnInit {
           break;
       }
 
-      this.booksFiltered.filter((value) => value.read === read);
+      this.booksFiltered = this.booksList.filter(
+        (value) => value.read === read
+      );
     });
   }
 

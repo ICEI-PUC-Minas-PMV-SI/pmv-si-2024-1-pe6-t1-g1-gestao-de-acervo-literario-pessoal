@@ -5,6 +5,7 @@ import { Login } from "../models/login.model";
 import { Register } from "../models/register.model";
 import { Book } from "../models/book.model";
 import { Collection } from "../models/collection.model";
+import { CookieService } from "ngx-cookie-service";
 
 @Injectable({
   providedIn: "root",
@@ -15,12 +16,15 @@ export class BibliotechService {
   collectionItem!: Collection;
   collectionList: Collection[] = [];
   user!: Register;
-  userId!: string;
+  userId: string = "";
   jwtToken = "";
 
-  private apiUrl = "http://ec2-34-201-111-58.compute-1.amazonaws.com/";
+  private apiUrl = "http://ec2-54-90-240-236.compute-1.amazonaws.com/";
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(
+    private httpClient: HttpClient,
+    private cookieService: CookieService
+  ) {}
   // auth
   register(register: Register): Observable<any> {
     return this.httpClient.post<any>(this.apiUrl + "auth/register", {
@@ -40,6 +44,7 @@ export class BibliotechService {
 
   // books
   getBooks(): Observable<any> {
+    this.getUser();
     const headers = new HttpHeaders({
       Authorization: `${this.jwtToken}`,
     });
@@ -50,12 +55,12 @@ export class BibliotechService {
   }
 
   getBooksByCollection(collectionId: number): Observable<any> {
+    this.getUser();
     const headers = new HttpHeaders({
       Authorization: `${this.jwtToken}`,
     });
 
-    const params = new HttpParams().set("userId", this.userId);
-    params.append("collectionId", collectionId);
+    const params = new HttpParams().set("collectionId", collectionId);
 
     return this.httpClient.get<any>(this.apiUrl + "book/byCollection", {
       headers,
@@ -64,6 +69,7 @@ export class BibliotechService {
   }
 
   updateBook(book: Book): Observable<any> {
+    this.getUser();
     const headers = new HttpHeaders({
       Authorization: `${this.jwtToken}`,
     });
@@ -89,6 +95,7 @@ export class BibliotechService {
   }
 
   saveBook(book: Book): Observable<any> {
+    this.getUser();
     const headers = new HttpHeaders({
       Authorization: `${this.jwtToken}`,
     });
@@ -113,6 +120,7 @@ export class BibliotechService {
   }
 
   removeBook(bookId: number | undefined): Observable<any> {
+    this.getUser();
     const headers = new HttpHeaders({
       Authorization: `${this.jwtToken}`,
     });
@@ -130,6 +138,7 @@ export class BibliotechService {
 
   // collections
   getCollections(): Observable<any> {
+    this.getUser();
     const headers = new HttpHeaders({
       Authorization: `${this.jwtToken}`,
     });
@@ -142,23 +151,26 @@ export class BibliotechService {
   }
 
   updateCollection(collection: Collection): Observable<any> {
+    this.getUser();
     const headers = new HttpHeaders({
       Authorization: `${this.jwtToken}`,
     });
 
+    // const params = new HttpParams().set("userId", this.userId);
+
     return this.httpClient.put<any>(
       this.apiUrl + "collection/",
       {
-        id: collection.id,
+        id: "8",
         title: collection.title,
         description: collection.description,
-        userId: this.userId,
       },
       { headers }
     );
   }
 
   saveCollection(collection: Collection): Observable<any> {
+    this.getUser();
     const headers = new HttpHeaders({
       Authorization: `${this.jwtToken}`,
     });
@@ -175,6 +187,7 @@ export class BibliotechService {
   }
 
   removeCollection(collectionId: number | undefined): Observable<any> {
+    this.getUser();
     const headers = new HttpHeaders({
       Authorization: `${this.jwtToken}`,
     });
@@ -192,20 +205,25 @@ export class BibliotechService {
 
   // user
   updateUser(register: Register): Observable<any> {
+    this.getUser();
     const headers = new HttpHeaders({
       Authorization: `${this.jwtToken}`,
     });
+    const params = new HttpParams().set("userId", this.userId);
 
     return this.httpClient.put<any>(
-      this.apiUrl + "user/",
+      this.apiUrl + "me/",
       {
-        password: register.password,
-        email: register.email,
         firstName: register.firstName,
         lastName: register.lastName,
-        userId: this.userId,
       },
-      { headers }
+      { headers, params }
     );
+  }
+
+  getUser() {
+    this.jwtToken = this.cookieService.get("user");
+    this.user = JSON.parse(this.cookieService.get("userObject"));
+    this.userId = this.user?.id?.toString() || "";
   }
 }
