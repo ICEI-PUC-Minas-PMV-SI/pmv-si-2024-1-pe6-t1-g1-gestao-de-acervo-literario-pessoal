@@ -26,7 +26,6 @@ export class RegisterComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.service.getUser();
     this.initializeForm();
 
     this.route.params.subscribe((params) => {
@@ -34,7 +33,10 @@ export class RegisterComponent implements OnInit {
     });
 
     this.user = this.service.user;
-    this.optParam === "edit" ? this.setForm() : null;
+    if (this.optParam === "edit") {
+      this.setForm();
+      this.service.getUser();
+    }
   }
 
   initializeForm() {
