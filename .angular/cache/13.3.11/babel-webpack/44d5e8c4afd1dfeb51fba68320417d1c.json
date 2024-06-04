@@ -1,1 +1,0 @@
-{"ast":null,"code":"export var Status = /*#__PURE__*/(() => {\n  (function (Status) {\n    Status[\"NotStarted\"] = \"N\\u00E3o lido\";\n    Status[\"Started\"] = \"Lendo\";\n    Status[\"Finished\"] = \"Lido\";\n  })(Status || (Status = {}));\n\n  return Status;\n})();","map":null,"metadata":{},"sourceType":"module"}
