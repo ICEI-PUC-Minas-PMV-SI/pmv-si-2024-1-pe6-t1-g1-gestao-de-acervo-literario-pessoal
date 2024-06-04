@@ -68,7 +68,7 @@
 
     <div *ngIf="!booksFiltered?.length">
       <div *ngIf="!collections?.length" class="flex items-center flex-col">
-        <img class="w-64 h-64 mr-4" src="../assets/empty.png" alt="logo" />
+        <img class="w-64 h-64 mr-4" src="assets/empty.png" alt="logo" />
         <div class="mt-4 text-4xl text-primary-600">Comece sua coleção</div>
         <button
           [routerLink]="['/new-collection', 'new']"
@@ -82,7 +82,7 @@
         *ngIf="!booksList?.length && !!collections?.length"
         class="flex items-center flex-col"
       >
-        <img class="w-64 h-64 mr-4" src="../assets/empty.png" alt="logo" />
+        <img class="w-64 h-64 mr-4" src="assets/empty.png" alt="logo" />
         <div class="mt-4 text-4xl text-primary-600">
           Adicione um livro a sua coleção
         </div>
