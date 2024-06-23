@@ -56,40 +56,31 @@ Página Inicial:
 * Oferece acesso a funcionalidade de adicionar um novo livro.
 
 Página de Adição de Livro:
-Exibe um formulário para adicionar um novo livro à biblioteca pessoal do usuário.
-
-Inclui campos para inserir informações como título, autor, editora, ano de publicação, etc.
+* Exibe um formulário para adicionar um novo livro à biblioteca pessoal do usuário.
+* Inclui campos para inserir informações como título, autor, editora, ano de publicação, ISBN, etc.
 
 Página de Detalhes do Livro:
-Apresenta todos os dados do livro cadastrado.
-
-Oferece acesso a funcionalidade de editar um novo livro.
+* Apresenta todos os dados do livro cadastrado.
+* Oferece acesso a funcionalidade de editar um novo livro.
 
 Página de Edição de Livro:
-Exibe um formulário para editar um livro da biblioteca pessoal do usuário.
-
-Inclui campos para inserir informações como título, autor, editora, ano de publicação, etc.
+* Exibe um formulário para editar ou excluir o livro da biblioteca pessoal do usuário.
+* Inclui campos para inserir informações como título, autor, editora, ano de publicação, ISBN, etc.
 
 Página de Coleções:
-Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções.
+* Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções.
+
 Página de Detalhes das Coleções:
-Apresenta os livros cadastrados da coleção selecionada.
-
-Cada livro é exibido com seu título, autor e outras informações relevantes.
-
-Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
+* Apresenta os livros cadastrados da coleção selecionada.
+* Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados ou excluí-los caso desejável.
 
 Página de Leituras:
-Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções, como "Lendo Agora", "Lidos" e "Quero Ler".
-
-Cada livro é exibido com seu título, autor e outras informações relevantes.
-
-Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
+* Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções, como "Lendo Agora", "Lidos" e "Quero Ler".
+* Cada livro é exibido com suas informações completas.
+* Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
 
 Página de Configurações do Usuário:
-Exibe um formulário para editar os dados de uma conta na plataforma.
-
-Inclui campos para inserir informações como nome, sobrenome, email e senha.
+* Exibe um formulário para editar os dados como nome, sobrenome, email ou senha.
 
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
