@@ -10,7 +10,14 @@
 [Descrição da arquitetura das aplicação móvel, incluindo os componentes e suas interações.]
 
 ## Modelagem da Aplicação
-[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]
+
+Na presente aplicação temos como entidades principais:
+
+- Usuário: Representa um usuário registrado na plataforma Bibliotech.
+- Livro: Representa um livro dentro da biblioteca pessoal de um usuário.
+- Acervo Pessoal: Representa uma coleção de livros organizada por um usuário.
+
+![Diagrama de Modelagem](img/Bibliotech.jpg)
 
 ## Projeto da Interface
 [Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
