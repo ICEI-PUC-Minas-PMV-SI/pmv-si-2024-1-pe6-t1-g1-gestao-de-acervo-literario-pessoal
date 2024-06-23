@@ -35,7 +35,61 @@ Na presente aplicação temos como entidades principais:
 ![Diagrama de Modelagem](img/Bibliotech.jpg)
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+O aplicativo móvel Bibliotech apresenta um design visual limpo e moderno, focado na usabilidade e na experiência do usuário. Utilizando uma paleta de cores suaves e agradáveis, o layout é organizado com espaçamento adequado entre elementos para facilitar a navegação e a compreensão das informações. Adaptável a diferentes tamanhos de tela, o design responsivo garante uma experiência consistente em dispositivos móveis, enquanto ícones intuitivos e tipografia legível complementam a interface, proporcionando uma interação eficiente e uma estética visualmente atraente.
+
+Layout das Páginas:
+
+Landing page:
+* Exibe a logo da bibliotech e botões de acesso para entrar e criar conta
+
+Página para login:
+* Exibe um formulário para realizar login na plataforma.
+* Inclui campos de email e senha.
+
+Página para criação de usuário:
+* Exibe um formulário para criar uma conta na plataforma.
+* Inclui campos para inserir informações de nome, sobrenome, email e senha.
+
+Página Inicial:
+* Apresenta uma visão geral da biblioteca pessoal do usuário com 3 botões na parte inferior da página para rápido acesso aos modulos acervo, livros e coleções.
+* Mostra os livros atualmente sendo lidos, os livros já lidos e os livros que o usuário deseja ler no futuro.
+* Oferece acesso a funcionalidade de adicionar um novo livro.
+
+Página de Adição de Livro:
+Exibe um formulário para adicionar um novo livro à biblioteca pessoal do usuário.
+
+Inclui campos para inserir informações como título, autor, editora, ano de publicação, etc.
+
+Página de Detalhes do Livro:
+Apresenta todos os dados do livro cadastrado.
+
+Oferece acesso a funcionalidade de editar um novo livro.
+
+Página de Edição de Livro:
+Exibe um formulário para editar um livro da biblioteca pessoal do usuário.
+
+Inclui campos para inserir informações como título, autor, editora, ano de publicação, etc.
+
+Página de Coleções:
+Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções.
+Página de Detalhes das Coleções:
+Apresenta os livros cadastrados da coleção selecionada.
+
+Cada livro é exibido com seu título, autor e outras informações relevantes.
+
+Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
+
+Página de Leituras:
+Apresenta a biblioteca pessoal do usuário, organizada em diferentes seções, como "Lendo Agora", "Lidos" e "Quero Ler".
+
+Cada livro é exibido com seu título, autor e outras informações relevantes.
+
+Permite ao usuário interagir com os livros, ver seus detalhes e editar os dados caso desejável.
+
+Página de Configurações do Usuário:
+Exibe um formulário para editar os dados de uma conta na plataforma.
+
+Inclui campos para inserir informações como nome, sobrenome, email e senha.
 
 ### Wireframes
 [Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
@@ -78,7 +132,11 @@ Na presente aplicação temos como entidades principais:
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+- Todos os endpoints são protegidos por autenticação via token, exceto o endpoint de criação de usuário.
+- A comunicação é criptografada com HTTPS para proteger os dados em trânsito.
+- O acesso aos endpoints é limitado para evitar abusos e garantir uma utilização justa dos recursos do servidor.
+- As entradas de dados são validadas para prevenir ataques de injeção de código.
+
 
 ## Implantação
 
