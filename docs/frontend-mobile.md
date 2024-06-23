@@ -40,11 +40,25 @@ Na presente aplicação temos como entidades principais:
 
 ## Requisitos Funcionais
 
-[Liste os principais requisitos funcionais da aplicação.]
+|ID    | Descrição do Requisito  | Prioridade |
+|------|-----------------------------------------|----|
+|RF-001| Permitir o cadastro de novo usuário no site| ALTA |
+|RF-002| Processamento de login e logout no site | ALTA | 
+|RF-003| Permitir o cadastro de um novo Acervo Pessoal  | ALTA |
+|RF-004| Possibilitar que o usuário registre os livros que está lendo | ALTA |
+|RF-005| Permitir a edição dos dados e status dos livros cadastrados | MÉDIA |
+|RF-006| Permitir o usuário exportar sua coleção no acervo pessoal em arquivo csv | MÉDIA |
+|RF-007| Permitir editar dados da conta de usuário | MÉDIA | 
+|RF-008| Permitir o usuário editar os dados de um Acervo Pessoal| MÉDIA |
+|RF-009| Permitir que o usuário acesse o sistema através de um dispositivo móvel | BAIXA |
 
 ## Requisitos Não Funcionais
 
-[Liste os principais requisitos não funcionais da aplicação, como desempenho, segurança, escalabilidade, etc.]
+|ID     | Descrição do Requisito  |Prioridade |
+|-------|-------------------------|----|
+|RNF-001| A interface deve ser intuitiva e fácil de usar, adequada para usuários com pouca familiaridade com tecnologia | ALTA | 
+|RNF-002| Garantir a segurança dos dados pessoais e de leitura dos usuários | ALTA |
+|RNF-003| O sistema deve ser responsivo para rodar em um dispositivos móvel | BAIXA |
 
 
 ## Considerações de Segurança
