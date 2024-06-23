@@ -14,7 +14,15 @@ Os objetivos do projeto Bibliotech incluem:
 
 ## Arquitetura
 
-[Descrição da arquitetura das aplicação móvel, incluindo os componentes e suas interações.]
+Componentes React Native:
+
+* Telas: Representam as diferentes interfaces do aplicativo, como tela de login, cadastro de livros, tela de coleções, etc.
+* Componentes Reutilizados em várias partes do aplicativo: Componentes como botões, listas, formulários, barras de navegação, etc.
+
+Serviços de API:
+
+* Um serviço para realizar chamadas HTTP para o backend em Node.js, responsável pelas operações de CRUD (Create, Read, Update, Delete) relacionadas a usuários, livros, coleções e acervos pessoais. A interface do usuário irá rendezirar os componentes quando o mesmo fizer uma requisição utilizando um dos recursos do sistema, tendo os serviços de API chamados para atualizar os dados no backend e refletir a mudança dos dados na tela do usuário.
+
 
 ## Modelagem da Aplicação
 
@@ -98,5 +106,4 @@ Na presente aplicação temos como entidades principais:
 | BOOK-02  | Book  | Logado em ibliotech mobile > Acessar o modulo de books no menu esquerdo > Selecionar um dos Livros > Clicar em editar livro > Selecionar campo de "status" do livro > Preencher dados obrigatórios > Clicar em "Salvar"  | Realizar a atualização de status dos livros ou editar suas informações  | Pendente |****
 
 # Referências
-
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+https://nodejs.org/docs/latest/api/, https://reactnative.dev/docs/getting-started, https://developer.android.com/studio?hl=pt-br
