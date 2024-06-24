@@ -10,7 +10,7 @@ Os objetivos do projeto Bibliotech incluem:
 * Possibilitar a criação de coleções pessoais personalizadas que atendam aos interesses e preferências individuais de cada usuário.
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+As tecnologias utilizadas: React native, node.js, typescript 
 
 ## Arquitetura
 
@@ -125,7 +125,6 @@ Página de Configurações do Usuário:
 
 - Todos os endpoints são protegidos por autenticação via token, exceto o endpoint de criação de usuário.
 - A comunicação é criptografada com HTTPS para proteger os dados em trânsito.
-- O acesso aos endpoints é limitado para evitar abusos e garantir uma utilização justa dos recursos do servidor.
 - As entradas de dados são validadas para prevenir ataques de injeção de código.
 
 
@@ -143,16 +142,18 @@ Página de Configurações do Usuário:
 
 | Caso de Teste ID   | Modulo   | Ação Específica do Teste  | Resultado Esperado | Resultado Atual |  
 |-----------------|-----------------|-----------------|-----------------|-----------------|
-| LOG-01  | User  | Acessar bibliotech mobile > Clicar em "Cadastrar novo usuário" > Preencher dados obrigatórios > Clicar em "Criar" | Realizar o cadastro de um novo usuário  | Pendente |
-| LOG-02  | User  | Acessar ibliotech mobile > Preencher dados de usuário e senha > Clicar em "Entrar" | Realizar o login no site  | Pendente |
-| LOG-03  | User  | Logado em ibliotech mobile > Clicar no botão "sair" do site  | Realizar o logout no site  | Pendente |
-| LOG-04  | User  | Logado em ibliotech mobile > Clicar no ícone de engrenagem do site > Clicar na opção editar > Preencher dados obrigatórios > Clicar no botão "Salvar"  | Realizar a alteração de dados de usuário  | Pendente |
-| LOG-05  | User  | Acessar ibliotech mobile de um dispositivo móvel > Preencher dados de usuário e senha > Clicar em "Entrar" | Realizar o login no site de um dispositvo móvel | Pendente |
-| COLLECTION-01  | Collection  | Logado em ibliotech mobile > Acessar modulos de "Acervo Pessoal" no menu esquerdo > Clicar em "Criar Novo Acervo" > Preencher dados obrigatórios > Clicar em "Cadastrar Novo Acervo"  | Realizar o cadastro de novo Acervo de Livros  | Pendente |
-| COLLECTION-02  | Collection  | Logado em ibliotech mobile > Acessar modulos de "Acervo Pessoal" no menu esquerdo > Selecionar um dos acervos criados  > Clicar no botão "Editar Dados" > Preencher dados obrigatórios > Clicar em "Salvar" para confirmação alteração  | Realizar a alteração de dados do Acervo Pessoal  | Pendente |
-| COLLECTION-03 | Collection  | Logado em ibliotech mobile > Acessar modulos de "Acervo Pessoal" no menu esquerdo > Selecionar um dos Acervos Pessoais > Clicar em "Exportar Acervo Pessoal em arquivo cvs"  | Realizar a exportação de acervo selecionado  | Pendente |
-| BOOK-01  | Book  | Logado em ibliotech mobile > Acessar o modulo de books no menu esquerdo > Clicar em "Adicionar novo livro" > Preencher dados obrigatórios > Clicar em "Cadastrar novo livro"  | Realizar o cadastro de novo livro  | Pendente |
-| BOOK-02  | Book  | Logado em ibliotech mobile > Acessar o modulo de books no menu esquerdo > Selecionar um dos Livros > Clicar em editar livro > Selecionar campo de "status" do livro > Preencher dados obrigatórios > Clicar em "Salvar"  | Realizar a atualização de status dos livros ou editar suas informações  | Pendente |****
+| RF-001          | Cadastro de novo usuário    | Novo usuário é cadastrado com sucesso no site |  |
+| RF-002          | Login no site               | Usuário consegue realizar o login com sucesso |  |
+| RF-002          | Logout do site              | Usuário consegue realizar o logout com sucesso |  |
+| RF-003          | Cadastro de novo Acervo Pessoal | Novo Acervo Pessoal é cadastrado com sucesso |  |
+| RF-004          | Registro de livros sendo lidos | Usuário consegue registrar os livros que está lendo |  |
+| RF-005          | Edição de dados e status dos livros | Usuário consegue editar os dados e status dos livros cadastrados |  |
+| RF-006          | Edição de dados da conta de usuário | Usuário consegue editar os dados da sua conta de usuário |  |
+| RF-007          | Edição de dados de um Acervo Pessoal | Usuário consegue editar os dados de um Acervo Pessoal |  |
+| RF-008          | Acesso através de dispositivo móvel | Usuário consegue acessar o sistema através de um dispositivo móvel |  |
+| RNF-001         | Interface intuitiva e fácil de usar | Usuários conseguem navegar facilmente pelo sistema, sem a necessidade de treinamento extensivo |  |
+| RNF-002         | Garantia de segurança dos dados pessoais | Os dados pessoais e de leitura dos usuários são protegidos por medidas de segurança, como criptografia e controle de acesso |  |
+| RNF-003         | Responsividade do sistema em dispositivos móveis | O sistema se adapta corretamente a diferentes tamanhos de tela e funcionalidades principais são acessíveis em dispositivos móveis |  |
 
 # Referências
 https://nodejs.org/docs/latest/api/, https://reactnative.dev/docs/getting-started, https://developer.android.com/studio?hl=pt-br
