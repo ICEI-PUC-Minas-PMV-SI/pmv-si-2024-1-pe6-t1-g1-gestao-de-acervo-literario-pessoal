@@ -83,7 +83,7 @@ Página de Configurações do Usuário:
 * Exibe um formulário para editar os dados como nome, sobrenome, email ou senha.
 
 ### Wireframes
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+![Wireframe 1](img/Wireframe-mobile-1.jpg)
 
 ### Design Visual
 [Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
