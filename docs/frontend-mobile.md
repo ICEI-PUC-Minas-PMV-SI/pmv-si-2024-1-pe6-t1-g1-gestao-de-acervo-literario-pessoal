@@ -10,7 +10,8 @@ Os objetivos do projeto Bibliotech incluem:
 * Possibilitar a criação de coleções pessoais personalizadas que atendam aos interesses e preferências individuais de cada usuário.
 
 ## Tecnologias Utilizadas
-As tecnologias utilizadas: React native, node.js, typescript 
+
+As tecnologias utilizadas foram: React native, node.js, typescript 
 
 ## Arquitetura
 
@@ -89,17 +90,100 @@ Página de Configurações do Usuário:
 ![Wireframe 4](img/Wireframe-mobile-4.JPG)
 
 ### Design Visual
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+
+Paleta de Cores:
+* A paleta de cores adota uma abordagem moderna e suave, com tons que evocam calma e sofisticação. As cores principais variam do lilás claro e suave (#f5f3ff) a um roxo mais profundo e vibrante (#2e1065).
+
+Tipografia:
+* A tipografia selecionada é a "Segoe UI", uma fonte moderna e legível que proporciona uma leitura confortável tanto em dispositivos móveis quanto em desktops. Essa fonte confere ao texto uma aparência limpa e clara.
+
+Ícones:
+* Os ícones na interface são simples e consistentes, adotando um estilo moderno e minimalista. Ícones vetoriais são utilizados para garantir escalabilidade e nitidez em diferentes tamanhos de tela.
+
+Outros Elementos Gráficos:
+* Além das cores, tipografia e ícones, outros elementos gráficos incluem:
+* Botões: Botões com bordas arredondadas e efeitos de hover suaves para indicar interatividade.
+* Barra de Navegação: Uma barra de navegação simples e intuitiva.
+* Cards de Livros: Elementos gráficos que exibem informações sobre os livros na biblioteca do usuário, incluindo título, autor e status de leitura, entre outros detalhes.
 
 ### Layout Responsivo
-[Discuta como a interface será adaptada para diferentes tamanhos de tela e dispositivos.]
+
+Media Queries:
+* Utilizaremos media queries para aplicar estilos específicos conforme o tamanho da tela do dispositivo. Essas consultas serão configuradas para ajustar o layout, o tamanho dos elementos e a disposição dos componentes conforme necessário, garantindo uma experiência de usuário otimizada.
+
+Grid Layouts:
+* Adotaremos sistemas de grid flexíveis para organizar eficientemente os elementos da página em diversos tamanhos de tela. Os layouts serão projetados para se adaptar intuitivamente, reorganizando os componentes conforme o espaço disponível na tela, mantendo a usabilidade e a legibilidade.
 
 ### Interações do Usuário
-[Descreva as interações do usuário na interface, como animações, transições entre páginas e outras interações.]
+
+
+* Página de Adição de Livro:
+O usuário acessa a página de adição de livro.
+Para adicionar um novo livro, o usuário precisa entrar ou criar uma conta.
+Após login ou cadastro, o usuário preenche um formulário com informações do livro, como título, autor e editora.
+Ao enviar o formulário, o livro é adicionado à biblioteca pessoal do usuário.
+
+* Página Inicial:
+Na página inicial, o usuário vê sua biblioteca pessoal.
+O usuário pode clicar em um livro para ver seus detalhes.
+Para adicionar um novo livro, o usuário clica em um botão que redireciona para a página de adição de livro.
+
+* Página de Detalhes do Livro:
+Aqui, o usuário pode ver todas as informações do livro, como título, autor e editora.
+O usuário pode clicar em um botão para editar essas informações, sendo redirecionado para a página de edição de livro.
+
+* Página de Edição de Livro:
+O usuário acessa esta página a partir da página de detalhes do livro.
+A página apresenta um formulário preenchido com as informações atuais do livro.
+O usuário faz as alterações desejadas e envia o formulário para salvar as mudanças.
+
+* Página de Login:
+O usuário acessa a página de login e preenche os campos de e-mail e senha.
+Ao enviar o formulário, o usuário é autenticado e redirecionado para a página inicial.
+
+* Página de Criação de Usuário:
+O usuário acessa a página de criação de usuário e preenche suas informações pessoais, como nome, sobrenome, e-mail e senha.
+Ao enviar o formulário, o usuário é cadastrado na plataforma e redirecionado para a página inicial.
+
+* Página de Configurações do Usuário:
+O usuário acessa esta página para atualizar suas informações pessoais, como nome, sobrenome, e-mail e senha.
+Ao enviar o formulário, as alterações são salvas.
+
+* Página de Coleções:
+O usuário acessa a página de coleções e visualiza suas coleções pessoais e os livros contidos nelas.
+Pode criar novas coleções e organizar seus livros conforme seus interesses e preferências.
+
+* Página de Detalhes das Coleções:
+O usuário acessa esta página clicando em uma coleção na página de coleções.
+Aqui, visualiza os livros da coleção e suas informações.
+O usuário pode interagir com os livros, ver detalhes e editar informações, assim como editar a própria coleção.
+
+* Página de Leituras:
+O usuário acessa a página de leituras e vê sua biblioteca pessoal organizada em seções como "Lendo Agora", "Lidos" e "Quero Ler".
+O usuário pode interagir com os livros de forma semelhante à página inicial.
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
+Interação do Usuário com a Aplicação:
+* O usuário utiliza a interface do Bibliotech para fornecer informações através de formulários, cliques em botões e outras ações de entrada.
+
+Captura e Preparação de Dados:
+* Os dados inseridos pelo usuário são coletados pela interface da aplicação e preparados para serem enviados ao servidor para processamento adicional.
+
+Transmissão de Dados para o Servidor:
+* Os dados coletados são enviados ao servidor da aplicação via requisições HTTP, utilizando métodos como POST ou PUT, dependendo da ação realizada pelo usuário (por exemplo, adicionar ou editar um livro).
+
+Validação e Processamento no Servidor:
+* No servidor, os dados recebidos são validados para garantir sua integridade e conformidade com as regras de negócio da aplicação. Após a validação, os dados são processados conforme necessário, executando operações como adicionar, atualizar ou excluir registros no banco de dados.
+
+Interação com o Banco de Dados:
+* Para armazenamento e recuperação de dados, o Bibliotech utiliza o MySQL. As operações de acesso ao banco de dados são realizadas através de consultas SQL.
+
+Execução de Consultas e Comandos:
+* As consultas e comandos SQL são executados para armazenar ou recuperar informações relacionadas aos livros, usuários e outras entidades da aplicação.
+
+Retorno de Informações ao Cliente:
+* Após o processamento no servidor e a manipulação dos dados no banco de dados, os resultados são retornados ao cliente via respostas HTTP. Essas respostas podem incluir dados atualizados, mensagens de confirmação, erros de validação ou outras informações relevantes para o usuário.
 
 ## Requisitos Funcionais
 
